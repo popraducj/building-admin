@@ -1,0 +1,255 @@
+[
+    {
+      "Key": "I want to",
+      "Values": {
+        "ro": "Vreau sa",
+        "en": "I want to"
+      }
+    },
+    {
+      "Key": "cookieInfo",
+      "Values": {
+        "ro": "despre cookie-uri. Acest website foloseste cookie-uri ca sa va poata oferi o experienta mai placuta. Bine",
+        "en": "about cookie. This website uses cookies to ensure you get the best experience on our website. Ok"
+      }
+    },
+    {
+      "Key": "learn more",
+      "Values": {
+        "ro": "stiu mai multe",
+        "en": "learn more"
+      }
+    },
+    {
+      "Key": "got it",
+      "Values": {
+        "ro": "am inteles",
+        "en": "got it"
+      }
+    },
+    {
+        "Key": "Email",
+        "Values": {
+          "ro": "Email",
+          "en": "Email"
+        }
+    },
+    {
+        "Key": "An email was sent to",
+        "Values": {
+          "ro": "Un email a fost trimis la adresa",
+          "en": "An email was sent to"
+        }
+    },
+    {
+        "Key": "Home",
+        "Values": {
+          "ro": "Acasa",
+          "en": "Home"
+        }
+    },
+    {
+        "Key": "Forbidden",
+        "Values": {
+          "ro": "Interzis",
+          "en": "Forbidden"
+        }
+    },
+    {
+        "Key": "Hello",
+        "Values": {
+          "ro": "Salut",
+          "en": "Hello"
+        }
+    },
+    {
+        "Key": "Menu",
+        "Values": {
+          "ro": "Meniu",
+          "en": "Menu"
+        }
+    },
+    {
+        "Key": "About us",
+        "Values": {
+          "ro": "Despre noi",
+          "en": "About us"
+        }
+    },
+    {
+        "Key": "Contact us",
+        "Values": {
+          "ro": "Contact",
+          "en": "Contact us"
+        }
+    },
+    {
+        "Key": "Pricing",
+        "Values": {
+          "ro": "Preturi",
+          "en": "Pricing"
+        }
+    },
+    {
+        "Key": "Send Message",
+        "Values": {
+          "ro": "Trimite mesaj",
+          "en": "Send Message"
+        }
+    },
+    {
+        "Key": "Invalid captcha",
+        "Values": {
+          "ro": "Captcha invalid",
+          "en": "Invalid captcha"
+        }
+    },
+    {
+      "Key": "Save",
+      "Values": {
+        "ro": "Salveaza",
+        "en": "Save"
+      }
+    },
+    {
+      "Key": "Description",
+      "Values": {
+        "ro": "Descriere",
+        "en": "Description"
+      }
+    },
+    {
+      "Key": "Address",
+      "Values": {
+        "ro": "Adresa",
+        "en": "Address"
+      }
+    },
+    {
+      "Key": "Phone number",
+      "Values": {
+        "ro": "Numar telefon",
+        "en": "Phone number"
+      }
+    },
+    {
+      "Key": "Edit",
+      "Values": {
+        "ro": "Editeaza",
+        "en": "Edit"
+      }
+    },
+    {
+      "Key": "Settings",
+      "Values": {
+        "ro": "Setari",
+        "en": "Settings"
+      }
+    },
+    {
+      "Key": "The changes have been saved successfully",
+      "Values": {
+        "ro": "Schimbarile s-au salvat cu success",
+        "en": "The changes have been saved successfully"
+      }
+    },
+    {
+      "Key": "The changes could not be saved",
+      "Values": {
+        "ro": "Schimbarile nu s-au putut salva",
+        "en": "The changes could not be saved"
+      }
+    },
+    {
+      "Key": "Dashboard",
+      "Values": {
+        "ro": "Bord",
+        "en": "Dashboard"
+      }
+    },
+    {
+      "Key": "Buildings",
+      "Values": {
+        "ro": "Caldiri",
+        "en": "Buildings"
+      }
+    },
+    {
+      "Key": "Notifications",
+      "Values": {
+        "ro": "Notificari",
+        "en": "Notifications"
+      }
+    },
+    {
+      "Key": "Name",
+      "Values": {
+        "ro": "Nume",
+        "en": "Name"
+      }
+    },
+    {
+        "Key": "Show details",
+        "Values": {
+          "ro": "Arata detalii",
+          "en": "Show details"
+        }
+    },
+    {
+        "Key": "The message should be between {2} and {1} characters long",
+        "Values": {
+          "ro": "Mesajul trebuie trebuie sa fie intre {2} si {1} charactere lungime.",
+          "en": "The message should be between {2} and {1} characters long"
+        }
+    },
+    {
+        "Key": "The message field is mandatory",
+        "Values": {
+          "ro": "Mesajul este camp obligatoriu",
+          "en": "The message field is mandatory"
+        }
+    },
+    {
+      "Key": "Message",
+      "Values": {
+        "ro": "Mesaj",
+        "en": "Message"
+      }
+    }
+    ,
+    {
+      "Key": "Subtitle",
+      "Values": {
+        "ro": "Site-ul de administrare este momentan in dezvoltare. Ne dorim sa oferim solutii de calitate, dar acest lucru presupune si mai multa munca",
+        "en": "We are still working on developing the platform. We want to offer high quality solutions, however that takes more time"
+      }
+    },
+    {
+        "Key": "Building admin",
+        "Values": {
+          "ro": "Administrator bloc",
+          "en": "Building admin"
+        }
+    },
+    {
+      "Key": "design made with",
+      "Values": {
+        "ro": "design facut cu",
+        "en": "design made with"
+      }
+    },
+    {
+      "Key": "by",
+      "Values": {
+        "ro": "de",
+        "en": "by"
+      }
+    },
+    {
+      "Key": "BackgroundImageAlt",
+      "Values": {
+        "ro": "Administratre bloc",
+        "en": "Buildings administration"
+      }
+    }
+  ]

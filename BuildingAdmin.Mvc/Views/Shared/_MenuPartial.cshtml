@@ -1,0 +1,63 @@
+
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<string> Localizer
+<span class="navbar navbar-color-on-scroll navbar-transparent fixed-top  navbar-expand-lg" color-on-scroll="100" id="cookie-nav">
+    <div class="container">
+        <div>
+            @Localizer["I want to"] <a class="text-info" href="https://cookiesandyou.com/">@Localizer["learn more"]</a> @Localizer["cookieInfo"] <a class="text-warning" id="accepted-cookie" href="#">@Localizer["got it"]!</a>
+        </div>
+        
+    </div>
+</span>
+<nav class="navbar navbar-color-on-scroll navbar-transparent fixed-top  navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
+    <div class="container">
+        <div class="navbar-translate">
+            <a class="navbar-brand" href="@Url.AbsoluteAction("Index", "Home")"><img src="~/images/logo.jpg" style="width:40px;heigth:40px;"/></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">                
+                <li class="dropdown nav-item">
+                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                        <i class="material-icons">apps</i> @Localizer["Menu"]
+                    </a>
+                    <div class="dropdown-menu dropdown-with-icons">
+                        <a href="@Url.AbsoluteAction("Index", "Home")" class="dropdown-item">
+                            <i class="material-icons">home</i> @Localizer["Home"]
+                        </a>
+                        <a href="@Url.AbsoluteAction("About", "Home")" class="dropdown-item">
+                            <i class="material-icons">info</i> @Localizer["About us"]
+                        </a>
+                        <a href="@Url.AbsoluteAction("Pricing", "Home")" class="dropdown-item">
+                            <i class="material-icons">monetization_on</i> @Localizer["Pricing"]
+                        </a>
+                        <a href="@Url.AbsoluteAction("Index", "Contact")" class="dropdown-item">
+                            <i class="material-icons">contacts</i> @Localizer["Contact us"]
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank" data-original-title="Like us on Facebook">
+                        <i class="fa fa-facebook-square"></i>
+                    </a>
+                </li>
+                @await Html.PartialAsync("_LanguagePartial")
+                @{
+                    if(@User.Identity.IsAuthenticated){
+
+                        <li class="nav-item"><a href="@Url.AbsoluteAction("Logout", "Account")" class="nav-link">@Localizer["Sign off"]</a></li>
+                        <li class="nav-item"><a href="@Url.AbsoluteAction("Index", "Settings")" class="nav-link">@Localizer["Settings"]</a></li>
+                        
+                    }else{                          
+                        <li class="nav-item"><a href="@Url.AbsoluteAction("Login", "Account")" class="nav-link">@Localizer["Sign in"]</a></li>
+                    }
+                }
+            </ul>
+    
+        </div>
+    </div>
+</nav>

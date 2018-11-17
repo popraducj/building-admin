@@ -1,0 +1,84 @@
+@model UserViewModel
+@using Microsoft.Extensions.Localization
+@inject Microsoft.Extensions.Configuration.IConfiguration configuration
+@inject IStringLocalizer<string> Localizer
+@{
+    ViewData["Title"] = Localizer["Sign in"];
+    ViewBag.PageType = "signup-page";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-10 col-md-5  ml-auto mr-auto">
+            <div class="card card-signup">
+                <h2 class="card-title text-center">@Localizer["Sign in"]</h2>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12 mr-auto">
+                            <form class="form" asp-controller="Account" asp-action="Login" method="post">
+                                @if (!ViewData.ModelState.IsValid)
+                                {            
+                                    <div class="alert alert-danger">                                    
+                                        <div class="alert-icon">
+                                            <i class="material-icons">error_outline</i>
+                                        </div>
+                                        <div asp-validation-summary="All" id="divValidationSummary" class="no-bullets"></div>                                    
+                                    </div>
+                                }
+                                <div class="form-group bmd-form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">
+                                                <i class="material-icons">email</i>
+                                            </span>
+                                        </div>
+                                        <input type="email" class="form-control" required asp-for="Email">
+                                    </div>                                
+                                </div>
+                                <div class="form-group bmd-form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">
+                                                <i class="material-icons">lock_outline</i>
+                                            </span>
+                                        </div>
+                                        <input class="form-control" required asp-for="Password">
+                                    </div>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label" style="margin-left:20px">
+                                        <input class="form-check-input" type="checkbox" asp-for="RememberMe">
+                                        <span class="form-check-sign">
+                                            <span class="check"></span>
+                                        </span>
+                                        @Localizer["Remember me"]
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <div  style="margin-left:17px" class="g-recaptcha" data-sitekey="@(configuration["ReCaptcha:SiteKey"])"></div>                                      
+                                </div>
+                                <div class="text-center">
+                                    <button id="submit" name="submit" type="submit" class="btn btn-success btn-round">@Localizer["Sign me in"]!</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-md-12 mr-auto" style="margin-left:20px">
+                        @Localizer["Don't you have a account yet"]? <strong><a class="text-success" href="@Url.AbsoluteAction("Register", "Account")">@Localizer["Sign up"]</a></strong>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mr-auto" style="margin-left:20px">
+                        @Localizer["Don't worry we all forget"]. <strong> <a class="text-info" href="@Url.AbsoluteAction("ForgetPassword", "Account")">@Localizer["Reset password"]</a></strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+}

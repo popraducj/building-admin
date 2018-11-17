@@ -1,0 +1,93 @@
+[
+    {
+        "Key": "Edit service",
+        "Values": {
+          "ro": "Editeaza serviciul",
+          "en": "Edit service"
+        }
+    },
+    {
+        "Key": "Add service",
+        "Values": {
+          "ro": "Adauga serviciu",
+          "en": "Add service"
+        }
+    },
+    {
+        "Key": "Choose service",
+        "Values": {
+          "ro": "Alege serviciu",
+          "en": "Choose service"
+        }
+    },
+    {
+        "Key": "Add new service",
+        "Values": {
+          "ro": "Adauga un nou serviciu",
+          "en": "Add new service"
+        }
+    },
+    {
+        "Key": "Unit",
+        "Values": {
+          "ro": "Unitate",
+          "en": "Unit"
+        }
+    },
+    {
+        "Key": "Display name for apartments",
+        "Values": {
+          "ro": "Numele afisat proprietarilor",
+          "en": "Display name for apartments"
+        }
+    },
+    {
+        "Key": "The unit field is mandatory",
+        "Values": {
+          "ro": "Unitatea este camp obligatoriu",
+          "en": "The unit field is mandatory"
+        }
+    },
+    {
+        "Key": "The provider name field is mandatory",
+        "Values": {
+          "ro": "Fieldul provider name este camp obligatoriu",
+          "en": "The provider name field is mandatory"
+        }
+    },
+    {
+        "Key": "The display name for apartments  field is mandatory",
+        "Values": {
+          "ro": "Numele afisat proprietarilor este camp obligatoriu",
+          "en": "The display name for apartments  field is mandatory"
+        }
+    },
+    {
+        "Key": "With personal reading",
+        "Values": {
+          "ro": "Cu autocitire",
+          "en": "With personal reading"
+        }
+    },
+    {
+        "Key": "Default value",
+        "Values": {
+          "ro": "Valoare implicita",
+          "en": "Default value"
+        }
+    },
+    {
+        "Key": "Default value cannot be less than 0",
+        "Values": {
+          "ro": "Valoare implicita nu poate fi mai mica ca 0",
+          "en": "Default value cannot be less than 0"
+        }
+    },
+    {
+        "Key": "Provider name",
+        "Values": {
+          "ro": "Nume furnizor",
+          "en": "Provider name"
+        }
+    }
+]

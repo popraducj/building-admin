@@ -1,0 +1,86 @@
+@model ProfileModel
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<string> Localizer
+
+@{
+    ViewData["Title"] = Localizer["Profile"];
+    Layout ="~/Views/Shared/_LayoutProfile.cshtml";
+}
+
+ <div class="main main-raised">
+        <div class="profile-content" style="padding-bottom:20px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 ml-auto mr-auto">
+                        <div class="name">
+                            <h3 class="title text-center">@Model.FirstName @Model.LastName</h3>
+                            <h6 class="text-center">@Localizer["Role"]: @Model.Role</h6>
+                        </div>
+                    </div>
+                </div>
+                <form class="form" asp-controller="Profile" asp-action="Edit" method="post">
+                    <div class="form-group bmd-form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="material-icons">face</i>
+                                </span>
+                            </div>
+                            <input type="text" asp-for="FirstName" class="form-control" required  >
+                            <span class="form-control-feedback" style="top:0px;">
+                                <i class="material-icons">clear</i>
+                            </span>
+                        </div>
+                        <span asp-validation-for="FirstName" hidden="hidden" class="text-danger"></span>                                  
+                    </div>
+                    <div class="form-group bmd-form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="material-icons">face</i>
+                                </span>
+                            </div>
+                            <input type="text" asp-for="LastName" class="form-control" required>
+                            <span class="form-control-feedback" style="top:0px;">
+                                <i class="material-icons">clear</i>
+                            </span>
+                        </div>
+                        <span asp-validation-for="LastName" hidden="hidden" class="text-danger"></span>                                  
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="material-icons">announcement</i>
+                                </span>
+                            </div>
+                            <input type="text" asp-for="Description" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="material-icons">home</i>
+                                </span>
+                            </div>
+                            <input type="text" asp-for="Address" class="form-control" >
+                        </div> 
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="material-icons">contact_phone</i>
+                                </span>
+                            </div>
+                            <input type="tel" asp-for="Phone" class="form-control" >
+                        </div> 
+                    </div>
+                    <div class="text-center">
+                        <button id="submit" name="submit" type="submit" class="btn btn-success btn-round">@Localizer["Save"]!</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>

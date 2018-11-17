@@ -1,0 +1,51 @@
+[
+    {
+        "Key": "Bills",
+        "Values": {
+          "ro": "Liste de cheltuieli",
+          "en": "Bills"
+        }
+    },
+    {
+        "Key": "Start date",
+        "Values": {
+          "ro": "De la",
+          "en": "Start date"
+        }
+    },
+    {
+        "Key": "End date",
+        "Values": {
+          "ro": "Pana la ",
+          "en": "End date"
+        }
+    },
+    {
+        "Key": "Due date",
+        "Values": {
+          "ro": "Data scadenta ",
+          "en": "Due date"
+        }
+    },
+    {
+        "Key": "No new bill",
+        "Values": {
+          "ro": "Nu s-a adaugat o noua lista cheltuiali. Nu puteti sa aveti doua liste cheltuieli deschise in acelas timp!",
+          "en": "Cannot add a new bill. You cannnot have 2 open bills in the save time!"
+        }
+    },
+    {
+        "Key": "Edit Bill",
+        "Values": {
+          "ro": "Editeaza lista de cheltuieli",
+          "en": "Edit Bill"
+        }
+    },
+    {
+        "Key": "Add service to bill",
+        "Values": {
+          "ro": "Adauga serviciu la cheltuieli",
+          "en": "Add service to bill"
+        }
+    }
+]

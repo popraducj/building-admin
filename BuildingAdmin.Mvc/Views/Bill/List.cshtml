@@ -1,0 +1,68 @@
+@model List<BuildingAdmin.DataLayer.Models.Bill >
+@using System.Linq;
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<string> Localizer
+    
+@{    
+    ViewData["Title"] = Localizer["Bills"];
+    Layout ="~/Views/Shared/Dashboard/_LayoutDashboard.cshtml";
+
+    var model = new SelectFormModel(ViewBag.Buildings){
+        Id = ViewBag.SelectedBuilding,
+        ActionName= "List",
+        ControllerName = "Bill",
+        Name = Localizer["Choose building"],
+        SubmitValue = Localizer["Show details"]
+    };
+}
+
+@await Html.PartialAsync("~/Views/Shared/Partials/_SelectForm.cshtml", model)
+@if(ViewBag.SelectedBuilding != new Guid().ToString())
+{
+    if(ViewBag.InvalidAdd){
+        <div class="text-danger">
+            <strong class="icon icon-danger">
+                <i class="material-icons">warning</i>
+            </strong>
+            <strong>@Localizer["No new bill"]</strong></div>
+    }
+    var name = model.Options.Where(x => x.Id.Equals(ViewBag.SelectedBuilding)).First().Name;
+    <div class="row">
+        <div class="col-lg-12 col-md-12">
+            <div class="card">
+                <div class="card-header" data-background-color="purple">
+                    @if(ViewBag.EnableAddNewBill){
+                        <a href="@Url.AbsoluteAction("Add", "Bill", new {buildingId = ViewBag.SelectedBuilding})" class="pull-right"><i class="material-icons">add_box</i></a>
+                    }
+                    <h4 class="title">@Localizer["Bills"]</h4>
+                    <p class="category">@name</p>
+                </div>
+                <div class="card-content table-responsive">
+                    <table class="table table-hover">
+                        <thead class="text-warning">
+                            <th>@Localizer["Start date"]</th>
+                            <th>@Localizer["End date"]</th>
+                            <th>@Localizer["Due date"]</th>
+                            <th></th>
+                        </thead>
+                        <tbody>
+                            @{
+                                foreach (var item in Model)
+                                {
+                                    var endDate = item.End == null ? string.Empty : item.End.Value.ToString("dd MMMM yyyy");
+                                    var dueDate = item.DueDate == null ? string.Empty : item.DueDate.Value.ToString("dd MMMM yyyy");
+                                    <tr>
+                                        <td>@item.AddedAtUtc.ToString("dd MMMM yyyy")</td>
+                                        <td>@endDate</td>
+                                        <td>@dueDate</td>
+                                        <td><a href="@Url.AbsoluteAction("Edit", "Bill", new{ id= item.Id})" class="material-icons">edit</a></td>
+                                    </tr>
+                                }
+                            }                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+}

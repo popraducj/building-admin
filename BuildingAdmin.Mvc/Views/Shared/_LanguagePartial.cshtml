@@ -1,0 +1,38 @@
+@using Microsoft.AspNetCore.Builder
+@using Microsoft.AspNetCore.Http.Features
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Options
+@using BuildingAdmin.Mvc.Models.Localizer
+@inject IViewLocalizer Localizer
+@inject IOptions<RequestLocalizationOptions> LocOptions
+@inject Microsoft.Extensions.Configuration.IConfiguration configuration
+
+@{
+    var requestCulture = Context.Features.Get<IRequestCultureFeature>().RequestCulture.Culture.TwoLetterISOLanguageName.ToLower();
+    var cultureItems = LocOptions.Value.SupportedUICultures
+        .Select(c => new SelectListItem { Value = c.Name, Text = c.TwoLetterISOLanguageName.ToUpper() })
+        .ToList();
+}
+
+
+<li class="dropdown nav-item">
+    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+        <i class="material-icons">language</i> @requestCulture
+    </a>
+    <div class="dropdown-menu dropdown-with-icons">
+        @{
+            var path = Context.Request.GetRawTarget();
+            if(path.Count() < 3 || (path.Count() > 3 && path[3] != '/')){
+                path = $"/ro{path}";
+            }
+            var url =   configuration["URL"] + "/{0}" + path.Substring(3);
+            foreach(var lang in cultureItems)
+            {
+                <a href="@string.Format(url, lang.Text.ToLower())" class="dropdown-item">
+                    <i class="material-icons">layers</i>  @lang.Text
+                </a>
+            }
+        }        
+    </div>
+</li>

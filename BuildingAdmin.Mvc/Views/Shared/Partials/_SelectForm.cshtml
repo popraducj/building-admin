@@ -1,0 +1,15 @@
+@model SelectFormModel
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<string> Localizer
+
+<form class="form" asp-controller="@Model.ControllerName" asp-action="@Model.ActionName" method="post">
+    <div class="row">
+        <div class="col-md-3">        
+        @await Html.PartialAsync("_Select.cshtml", Model)
+        </div>
+        <div class="col-lg-2">
+            <button id="submit" name="submit" type="submit" class="btn btn-success btn-round">@Model.SubmitValue</button>
+        </div>
+    </div>
+        
+</form>

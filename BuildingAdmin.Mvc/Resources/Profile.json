@@ -1,0 +1,30 @@
+[
+    {
+        "Key": "Profile",
+        "Values": {
+          "ro": "Profil",
+          "en": "Profile"
+        }
+    },
+    {
+        "Key": "Role",
+        "Values": {
+          "ro": "Rol",
+          "en": "Role"
+        }
+    },
+    {
+        "Key": "Edit profile",
+        "Values": {
+          "ro": "Editeaza profilul",
+          "en": "Edit profile"
+        }
+    },
+    {
+        "Key": "Personal settings",
+        "Values": {
+          "ro": "Setari personale",
+          "en": "Personal settings"
+        }
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "Key": "Work with us",
+        "Values": {
+          "ro": "Hai sa colaboram",
+          "en": "Work with us"
+        }
+    },
+    {
+        "Key": "If you have any feedback, questions, suggestions or even solutions fill in the form",
+        "Values": {
+          "ro": "Daca ai feedback, intrebari, sugestii sau chiar solutii, scrie-ne pentru orice",
+          "en": "If you have any feedback, questions, suggestions or even solutions fill in the form"
+        }
+    },
+    {
+        "Key": "Meta description contact",
+        "Values": {
+          "ro": "Nu ezitati sa ne contactati pentru intrebari, feedback sau sugesti. Administrarea blocului e mai simpla daca sti mai multe.",
+          "en": "Contact us if you have questions, or feedback of anykind. The building administration is easy if you know more about it."
+        }
+    },
+    {
+        "Key": "Keywords contact",
+        "Values": {
+          "ro": "contact feedback bloc administrator  ",
+          "en": "contact feedback building admin"
+        }
+    }
+]

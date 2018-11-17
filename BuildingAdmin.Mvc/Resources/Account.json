@@ -1,0 +1,282 @@
+[
+    {
+      "Key": "The account is active now",
+      "Values": {
+        "ro": "Contul este activ",
+        "en": "The account is active now"
+      }
+    },
+    {
+      "Key": "Your account has been activated with success. We wish you a great day",
+      "Values": {
+        "ro": "Contul dumneavostra a fost activat cu success. Va dorim o zi frumoasa",
+        "en": "Your account has been activated with success. We wish you a great day"
+      }
+    },
+    {
+        "Key": "Sign in",
+        "Values": {
+          "ro": "Autentificare",
+          "en": "Sign in"
+        }
+    },
+    {
+        "Key": "Account activation",
+        "Values": {
+          "ro": "Activare cont",
+          "en": "Account activation"
+        }
+    },
+    {
+        "Key": "Change Password",
+        "Values": {
+          "ro": "Schimbare Parola",
+          "en": "Change Password"
+        }
+    },
+    {
+        "Key": "Password",
+        "Values": {
+          "ro": "Parola",
+          "en": "Password"
+        }
+    },
+    {
+        "Key": "Confirm Password",
+        "Values": {
+          "ro": "Confirma Parola",
+          "en": "Confirm Password"
+        }
+    },
+    {
+        "Key": "Old Password",
+        "Values": {
+          "ro": "Parola veche",
+          "en": "Old Password"
+        }
+    },
+    {
+        "Key": "Change password confirmation",
+        "Values": {
+          "ro": "Confirmare schimbare parola",
+          "en": "Change password confirmation"
+        }
+    },
+    {
+        "Key": "It changed",
+        "Values": {
+          "ro": "S-a schimbat",
+          "en": "It changed"
+        }
+    },
+    {
+        "Key": "Your password has been changed succesfully",
+        "Values": {
+          "ro": "Parola dumneavostra s-a schimbat cu success.",
+          "en": "Your password has been changed succesfully"
+        }
+    },
+    {
+        "Key": "I forgot the password",
+        "Values": {
+          "ro": "Am uitat parola",
+          "en": "I forgot the password"
+        }
+    },
+    {
+        "Key": "Send email",
+        "Values": {
+          "ro": "Trimite email",
+          "en": "Send email"
+        }
+    },
+    {
+        "Key": "Remember me",
+        "Values": {
+          "ro": "Tine-ma autentificat",
+          "en": "Remember me"
+        }
+    },
+    {
+        "Key": "Sign me in",
+        "Values": {
+          "ro": "Autentifica-ma",
+          "en": "Sign me in"
+        }
+    },
+    {
+        "Key": "Sign off",
+        "Values": {
+          "ro": "Delogare",
+          "en": "Sign off"
+        }
+    },
+    {
+        "Key": "Sign up",
+        "Values": {
+          "ro": "Inregistrare",
+          "en": "Sign up"
+        }
+    },
+    {
+        "Key": "Don't you have a account yet",
+        "Values": {
+          "ro": "Nu ai cont?",
+          "en": "Don't you have a account yet"
+        }
+    },
+    {
+        "Key": "Don't worry we all forget",
+        "Values": {
+          "ro": "Nu iti face probleme cu totii uitam",
+          "en": "Don't worry we all forget"
+        }
+    },
+    {
+        "Key": "Reset password",
+        "Values": {
+          "ro": "Reseteaza parola",
+          "en": "Reset password"
+        }
+    },
+    {
+        "Key": "Sign me up",
+        "Values": {
+          "ro": "Inregistreaza-ma",
+          "en": "Sign me up"
+        }
+    },
+    {
+        "Key": "First Name",
+        "Values": {
+          "ro": "Prenume",
+          "en": "First Name"
+        }
+    },
+    {
+        "Key": "Last Name",
+        "Values": {
+          "ro": "Nume",
+          "en": "Last Name"
+        }
+    },
+    {
+        "Key": "I agree with",
+        "Values": {
+          "ro": "Sunt de acord cu",
+          "en": "I agree with"
+        }
+    },
+    {
+        "Key": "terms and conditions",
+        "Values": {
+          "ro": "termenii si conditile",
+          "en": "terms and conditions"
+        }
+    },
+    {
+      "Key": "Not found email message",
+      "Values": {
+        "ro": "Daca nu gasiti emailul in decurs de 5-10 minute in inbox, va rugam sa verificati si folderul de spam. Oricand puteti retrimite email-ul print-un singur click.",
+        "en": "If you don't find the email in 5-10 minutes in inbox, please check spam folder as well. You can resend the email any time by clicking the bellow link"
+      }
+    },
+    {
+        "Key": "We have send it",
+        "Values": {
+          "ro": "L-am trimis",
+          "en": "We have send it"
+        }
+    },
+    {
+        "Key": "Confirmation password recovery",
+        "Values": {
+          "ro": "Confirmare recuperare parola",
+          "en": "Confirmation password recovery"
+        }
+    },
+    {
+        "Key": "Resend email",
+        "Values": {
+          "ro": "Retrimte email-ul",
+          "en": "Resend email"
+        }
+    },
+    {
+        "Key": "In email you will find a link that you will need access in order to change the password",
+        "Values": {
+          "ro": "In email o so gasiti un link pe care trebuie sa il accesati pentru a putea schimba parola actuala",
+          "en": "In email you will find a link that you will need access in order to change the password"
+        }
+    },
+    {
+        "Key": "This email address is not valid",
+        "Values": {
+          "ro": "Aceasta adresa de email nu este o adresa valida",
+          "en": "This email address is not valid"
+        }
+    },
+    {
+        "Key": "The email field is mandatory",
+        "Values": {
+          "ro": "Email-ul este camp obligatoriu",
+          "en": "The email field is mandatory"
+        }
+    },
+    {
+        "Key": "Password confirmation is mandatory",
+        "Values": {
+          "ro": "Confirmarea parolei este obligatorie",
+          "en": "Password confirmation is mandatory"
+        }
+    },
+    {
+        "Key": "Invalid email or wrong password",
+        "Values": {
+          "ro": "Email invalid sau parola gresita",
+          "en": "Invalid email or wrong password"
+        }
+    },
+    {
+        "Key": "The account is invalid",
+        "Values": {
+          "ro": "Contul este inactiv",
+          "en": "The account is invalid"
+        }
+    },
+    {
+        "Key": "The terms and conditions must be accepted",
+        "Values": {
+          "ro": "Termenii si conditile trebuie acceptate",
+          "en": "The terms and conditions must be accepted"
+        }
+    },
+    {
+        "Key": "The email address already exists in our database",
+        "Values": {
+          "ro": "Adresa de email deja exista in baza nostra de date",
+          "en": "The email address already exists in our database"
+        }
+    },
+    {
+        "Key": "The email address was not found",
+        "Values": {
+          "ro": "Adresa de email nu a fost gasita",
+          "en": "The email address was not found"
+        }
+    },
+    {
+        "Key": "The email address was not confirmed",
+        "Values": {
+          "ro": "Adresa de email nu a fost confirmata",
+          "en": "The email address was not confirmed"
+        }
+    },
+    {
+        "Key": "In order to get register you need to agree with terms and conditions",
+        "Values": {
+          "ro": "Pentru a te putea inregistra trebuie sa accepti termenii si conditile",
+          "en": "In order to get register you need to agree with terms and conditions"
+        }
+    }
+  ]

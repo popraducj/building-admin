@@ -1,0 +1,65 @@
+[
+    {
+        "Key": "Lets talk product",
+        "Values": {
+          "ro": "Despre produs",
+          "en": "Let's talk product"
+        }
+    },
+    {
+        "Key": "Building-admin.com is for a relaxed administrator. We invite you to try it out!",
+        "Values": {
+          "ro": "Building-admin.com inseamna un administrator relaxat. Te invitam sa incerci si tu!",
+          "en": "Building-admin.com is for a relaxed administrator. We invite you to try it out!"
+        }
+    },
+    {
+        "Key": "We aim to help building administrators",
+        "Values": {
+          "ro": "Platforma noastra online isi doreste sa ajute administratorii. Acestua vor putea pastra intr-un sigur loc toata documentatia despre locatari si cheltuielile asociatiei. De asemeana, listele de cheltuieli se vor crea mai usor si mai rapid.",
+          "en": "We aim to help building administrators to better organize thier documents, to have them all in one place. Also the billing tables can be created faster and easier."
+        }
+    },
+    {
+        "Key": "You can",
+        "Values": {
+          "ro": "Puteti sa ne",
+          "en": "You can"
+        }
+    },
+    {
+        "Key": "contact us",
+        "Values": {
+          "ro": "contactati",
+          "en": "contact us"
+        }
+    },
+    {
+        "Key": "anytime",
+        "Values": {
+          "ro": "oricand",
+          "en": "anytime"
+        }
+    },
+    {
+        "Key": "Our offer",
+        "Values": {
+          "ro": "Oferta noastra",
+          "en": "Our offer"
+        }
+    },
+    {
+        "Key": "Meta description home",
+        "Values": {
+          "ro": "Administrea cheltuilelile de bloc rapid, usor, de oriunde si oricand. Program de administrare contabila pentru asociatiile de proprietari.",
+          "en": "Managing building administration billings, anytime, anywhere, on any device. Building administration and much more."
+        }
+    },
+    {
+        "Key": "Keywords home",
+        "Values": {
+          "ro": "bloc administrator cheltuieli locatar ",
+          "en": "building admin bills tenant table billing"
+        }
+    }
+]

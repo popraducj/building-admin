@@ -1,0 +1,44 @@
+[
+    {
+        "Key": "Apartments",
+        "Values": {
+          "ro": "Apartmente",
+          "en": "Apartments"
+        }
+    },
+    {
+        "Key": "Add apartment",
+        "Values": {
+          "ro": "Adauga apartament",
+          "en": "Add apartment"
+        }
+    },
+    {
+        "Key": "Number",
+        "Values": {
+          "ro": "Numarul",
+          "en": "Number"
+        }
+    },
+    {
+        "Key": "Edit apartment",
+        "Values": {
+          "ro": "Editeaza apartament",
+          "en": "Edit apartment"
+        }
+    },
+    {
+        "Key": "The entrance field is mandatory",
+        "Values": {
+          "ro": "Scara este camp obligatoriu",
+          "en": "The entrance field is mandatory"
+        }
+    },
+    {
+        "Key": "Entrance",
+        "Values": {
+          "ro": "Scara",
+          "en": "Entrance"
+        }
+    }
+]

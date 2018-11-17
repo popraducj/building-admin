@@ -1,0 +1,149 @@
+[    
+    {
+        "Key": "The password field is mandatory",
+        "Values": {
+          "ro": "Parola este camp obligatoriu",
+          "en": "The password field is mandatory"
+        }
+    },
+    {
+        "Key": "The old password field is mandatory",
+        "Values": {
+          "ro": "Parola veche este camp obligatoriu",
+          "en": "The old password field is mandatory"
+        }
+    },
+    {
+        "Key": "The password should be between {2} and {1} characters long",
+        "Values": {
+          "ro": "Parola trebuie trebuie sa fie intre {2} si {1} charactere lungime.",
+          "en": "The password should be between {2} and {1} characters long"
+        }
+    },
+    {
+        "Key": "Password Pattern Error",
+        "Values": {
+          "ro": "Parola trebuie sa contina minim 8 caractere si trebuie ca contina cel putin 3 din urmatoarele formatiuni: litera mare(A-Z), litera mica(a-z), numar(0-9) si caracter special(ex: !@#$%^&*).",
+          "en": "Passwords must be at least 8 characters and contain at 3 of 4 of the following: upper case (A-Z), lower case (a-z), number (0-9) and special character (e.g. !@#$%^&*)."
+        }
+    },
+    {
+        "Key": "The confirm password field is mandatory",
+        "Values": {
+          "ro": "Confirmarea parolei este obligatorie.",
+          "en": "The confirm password field is mandatory"
+        }
+    },
+    {
+        "Key": "The password and confirm password should be the same",
+        "Values": {
+          "ro": "Email-ul este camp obligatoriu",
+          "en": "The password and confirm password should be the same"
+        }
+    },
+    {
+        "Key": "The first name field is mandatory",
+        "Values": {
+          "ro": "Prenumele este camp obligatoriu",
+          "en": "The first name field is mandatory"
+        }
+    },
+    {
+        "Key": "The first name should be between {2} and {1} characters long",
+        "Values": {
+          "ro": "Prenumele trebuie sa fie intre {2} si {1} charactere lungime",
+          "en": "The first name should be between {2} and {1} characters long"
+        }
+    },
+    {
+        "Key": "The last name field is mandatory",
+        "Values": {
+          "ro": "Numele este camp obligatoriu",
+          "en": "The last name field is mandatory"
+        }
+    },
+    {
+        "Key": "The last name should be between {2} and {1} characters long",
+        "Values": {
+          "ro": "Numele trebuie sa fie intre {2} si {1} charactere lungime",
+          "en": "The last name should be between {2} and {1} characters long"
+        }
+    },
+    {
+        "Key": "Anytime, anywhere and any device",
+        "Values": {
+          "ro": "Oriunde, oricand, pe orice device",
+          "en": "Anytime, anywhere, on any device"
+        }
+    },
+    {
+        "Key": "Anytime, anywhere and any device text",
+        "Values": {
+          "ro": "Puteti sa folositi platforma noastra de oriunde, oricand, de pe orice device (calculator, tableta sau telefon) atata timp cat aveti conexiune la internet",
+          "en": "You can use our platfrom anytime, anywhere, on any device (PC, laptop, mobile device), as long as you have internet connection"
+        }
+    },
+    {
+        "Key": "Quick and easy",
+        "Values": {
+          "ro": "Rapid si usor",
+          "en": "Quick and easy"
+        }
+    },
+    {
+        "Key": "Quick and easy text",
+        "Values": {
+          "ro": "Folsind intrumentele site-ului veti scurta timpul pe care il petreceti in mod normal la crearea listelor de cheltuieli. De exemplu: se pot defini cheltuieli repetitive, locatarii vor putea introduce singuri citirea apometrelor etc.",
+          "en": "Using our platform tools, you will shorten the time you usualy spend on creating the building lists. For example: you can define repetitive bills, also your tenants can submit thier own water indexes"
+        }
+    },
+    {
+        "Key": "Email notification",
+        "Values": {
+          "ro": "Notificare prin email",
+          "en": "Email notification"
+        }
+    },
+    {
+        "Key": "Email notification text",
+        "Values": {
+          "ro": "Notificare prin email, in functie de setarile alese. De exemplu: daca s-a creat un nou tabel de cheltuieli, daca a inceput perioada de citire a apometrelor etc.",
+          "en": "Email notification for any changes defined by the user. For exemple: if a new bills table is created or water indexes can be subbmited"
+        }
+    },
+    {
+        "Key": "Register confirmation",
+        "Values": {
+          "ro": "Confirmare inregistrare",
+          "en": "Register confirmation"
+        }
+    },
+    {
+        "Key": "After you acctivate your account you will be able to sign in",
+        "Values": {
+          "ro": "Dupa activarea contului o sa va puteti autentifica",
+          "en": "After you acctivate your account you will be able to sign in"
+        }
+    },
+    {
+        "Key": "Innovative design",
+        "Values": {
+          "ro": "Design revolutionar",
+          "en": "Innovative design"
+        }
+    },
+    {
+        "Key": "Innovative design text",
+        "Values": {
+          "ro": "Va veti bucura de un design de special conceput pentru administratori si locatari. Usor de folosit si intuitiv.",
+          "en": "You will find a very attractive design created for administrators and tenants. Easy and user friendly"
+        }
+    },
+    {
+        "Key": "After you activate your account you'll be able to sign in",
+        "Values": {
+          "ro": "Dupa activarea contului o sa va puteti autentifica",
+          "en": "After you activate your account you'll be able to sign in"
+        }
+    }
+]

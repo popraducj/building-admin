@@ -1,0 +1,137 @@
+@model ProfileModel
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<string> Localizer
+
+@{
+    ViewData["Title"] = Localizer["Profile"];
+    Layout ="~/Views/Shared/_LayoutProfile.cshtml";
+}
+
+ <div class="main main-raised">
+    <div class="profile-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 ml-auto mr-auto">
+                    <div class="name">
+                        <h3 class="title text-center">@Localizer["Personal settings"]</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <p class="description"> </p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 ml-auto mr-auto">
+                    <div class="profile-tabs">
+                        <ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#personal" role="tab" data-toggle="tab">
+                                    <i class="material-icons">face</i> @Localizer["Edit"]
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#changePassowrd" role="tab" data-toggle="tab">
+                                    <i class="material-icons">lock_outline</i> @Localizer["Change Password"]
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content tab-space">
+                <div class="tab-pane active text-center gallery" id="personal">
+                    <div class="row">                            
+                        <div class="col-md-6 ml-auto mr-auto">
+                            <form class="form" asp-controller="Account" asp-action="ChangePassword" method="post">    
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">
+                                                <i class="material-icons">lock_outline</i>
+                                            </span>
+                                        </div>
+                                        <input asp-for="FirstName" class="form-control" required >
+                                        <span class="form-control-feedback" style="top:0px;">
+                                            <i class="material-icons">clear</i>
+                                        </span>
+                                    </div>
+                                <span hidden="hidden" class="text-danger"></span> 
+                                </div>                           
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">
+                                                <i class="material-icons">lock_outline</i>
+                                            </span>
+                                        </div>
+                                        <input asp-for="LastName" class="form-control" required >
+                                        <span class="form-control-feedback" style="top:0px;">
+                                            <i class="material-icons">clear</i>
+                                        </span>
+                                    </div>
+                                <span hidden="hidden" class="text-danger"></span> 
+                                </div>
+                                <div class="text-center">
+                                    <button id="submit" name="submit" type="submit" class="btn btn-success btn-round">@Localizer["Save"]</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane text-center gallery" id="changePassowrd">
+                    <div class="row">
+                        <div class="col-md-6 ml-auto mr-auto">
+                            <form class="form" asp-controller="Account" asp-action="ChangePassword" method="post">    
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">
+                                                <i class="material-icons">lock_outline</i>
+                                            </span>
+                                        </div>
+                                        <input placeholder="old password" class="form-control" required pattern="^((?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])|(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[^a-zA-Z0-9])|(?=.*?[A-Z])(?=.*?[0-9])(?=.*?[^a-zA-Z0-9])|(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^a-zA-Z0-9])).{8,}$" >
+                                        <span class="form-control-feedback" style="top:0px;">
+                                            <i class="material-icons">clear</i>
+                                        </span>
+                                    </div>
+                                <span hidden="hidden" class="text-danger"></span> 
+                                </div>                           
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">
+                                                <i class="material-icons">lock_outline</i>
+                                            </span>
+                                        </div>
+                                        <input placeholder="new password" class="form-control" required pattern="^((?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])|(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[^a-zA-Z0-9])|(?=.*?[A-Z])(?=.*?[0-9])(?=.*?[^a-zA-Z0-9])|(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^a-zA-Z0-9])).{8,}$" >
+                                        <span class="form-control-feedback" style="top:0px;">
+                                            <i class="material-icons">clear</i>
+                                        </span>
+                                    </div>
+                                <span hidden="hidden" class="text-danger"></span> 
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">
+                                                <i class="material-icons">lock_outline</i>
+                                            </span>
+                                        </div>
+                                        <input  placeholder="confirm new password" class="form-control" required >
+                                        <span class="form-control-feedback" style="top:0px;">
+                                            <i class="material-icons">clear</i>
+                                        </span>
+                                    </div>
+                                <span hidden="hidden" class="text-danger"></span> 
+                                </div>
+                                <div class="text-center">
+                                    <button id="submit" name="submit" type="submit" class="btn btn-success btn-round">@Localizer["Change Password"]</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

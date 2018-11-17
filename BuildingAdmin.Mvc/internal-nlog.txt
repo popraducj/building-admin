@@ -1,0 +1,225 @@
+2018-10-02 07:27:15.1609 Info Message Template Auto Format enabled
+2018-10-02 07:27:15.1692 Info Loading assembly: NLog.Web.AspNetCore
+2018-10-02 07:27:15.2273 Info Adding target ColoredConsole Target[console]
+2018-10-02 07:27:15.2386 Info Adding target File Target[allfile]
+2018-10-02 07:27:15.2449 Info Configured from an XML element in F:\VsProjects\building-admin\BuildingAdmin.Mvc\bin\Debug\netcoreapp2.1\Configs/nlog.config...
+2018-10-02 07:27:15.2449 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: allfile
+2018-10-02 07:27:15.2449 Info Found 30 configuration items
+2018-10-02 07:27:15.4295 Info Message Template Auto Format enabled
+2018-10-02 07:27:15.4295 Info Found 30 configuration items
+2018-10-02 07:27:15.4295 Info Loading assembly: NLog.Web.AspNetCore
+2018-10-02 07:27:15.4295 Info Adding target ColoredConsole Target[console]
+2018-10-02 07:27:15.4319 Info Adding target File Target[allfile]
+2018-10-02 07:27:15.4319 Info Configured from an XML element in F:\VsProjects\building-admin\BuildingAdmin.Mvc\bin\Debug\netcoreapp2.1\Configs/nlog.config...
+2018-10-02 07:27:15.4319 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: allfile
+2018-10-02 07:27:15.4319 Info Closing old configuration.
+2018-10-02 07:27:15.4547 Info Found 30 configuration items
+2018-10-02 07:27:15.6884 Info Message Template Auto Format enabled
+2018-10-02 07:27:15.6884 Info Found 30 configuration items
+2018-10-02 07:27:15.6884 Info Loading assembly: NLog.Web.AspNetCore
+2018-10-02 07:27:15.6884 Info Adding target ColoredConsole Target[console]
+2018-10-02 07:27:15.6884 Info Adding target File Target[allfile]
+2018-10-02 07:27:15.6884 Info Configured from an XML element in F:\VsProjects\building-admin\BuildingAdmin.Mvc\bin\Debug\netcoreapp2.1\Configs/nlog.config...
+2018-10-02 07:27:15.6884 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: allfile
+2018-10-02 07:27:15.6884 Info Closing old configuration.
+2018-10-02 07:27:15.6884 Info Found 30 configuration items
+2018-10-02 07:40:00.1217 Info Message Template Auto Format enabled
+2018-10-02 07:40:00.1217 Info Loading assembly: NLog.Web.AspNetCore
+2018-10-02 07:40:00.1889 Info Adding target ColoredConsole Target[console]
+2018-10-02 07:40:00.1999 Info Adding target File Target[allfile]
+2018-10-02 07:40:00.1999 Info Configured from an XML element in F:\VsProjects\building-admin\BuildingAdmin.Mvc\bin\Debug\netcoreapp2.1\Configs/nlog.config...
+2018-10-02 07:40:00.1999 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: allfile
+2018-10-02 07:40:00.2205 Info Found 30 configuration items
+2018-10-02 07:40:00.3903 Info Message Template Auto Format enabled
+2018-10-02 07:40:00.3903 Info Found 30 configuration items
+2018-10-02 07:40:00.3903 Info Loading assembly: NLog.Web.AspNetCore
+2018-10-02 07:40:00.3903 Info Adding target ColoredConsole Target[console]
+2018-10-02 07:40:00.3903 Info Adding target File Target[allfile]
+2018-10-02 07:40:00.3903 Info Configured from an XML element in F:\VsProjects\building-admin\BuildingAdmin.Mvc\bin\Debug\netcoreapp2.1\Configs/nlog.config...
+2018-10-02 07:40:00.3903 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: allfile
+2018-10-02 07:40:00.3903 Info Closing old configuration.
+2018-10-02 07:40:00.4155 Info Found 30 configuration items
+2018-10-02 07:40:00.6435 Info Message Template Auto Format enabled
+2018-10-02 07:40:00.6435 Info Found 30 configuration items
+2018-10-02 07:40:00.6435 Info Loading assembly: NLog.Web.AspNetCore
+2018-10-02 07:40:00.6435 Info Adding target ColoredConsole Target[console]
+2018-10-02 07:40:00.6435 Info Adding target File Target[allfile]
+2018-10-02 07:40:00.6435 Info Configured from an XML element in F:\VsProjects\building-admin\BuildingAdmin.Mvc\bin\Debug\netcoreapp2.1\Configs/nlog.config...
+2018-10-02 07:40:00.6435 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: allfile
+2018-10-02 07:40:00.6435 Info Closing old configuration.
+2018-10-02 07:40:00.6512 Info Found 30 configuration items
+2018-10-02 09:03:51.3136 Info Message Template Auto Format enabled
+2018-10-02 09:03:51.3221 Info Loading assembly: NLog.Web.AspNetCore
+2018-10-02 09:03:51.3889 Info Adding target ColoredConsole Target[console]
+2018-10-02 09:03:51.4005 Info Adding target File Target[allfile]
+2018-10-02 09:03:51.4005 Info Configured from an XML element in F:\VsProjects\building-admin\BuildingAdmin.Mvc\bin\Debug\netcoreapp2.1\Configs/nlog.config...
+2018-10-02 09:03:51.4005 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: allfile
+2018-10-02 09:03:51.4228 Info Found 30 configuration items
+2018-10-02 09:03:51.6423 Info Message Template Auto Format enabled
+2018-10-02 09:03:51.6423 Info Found 30 configuration items
+2018-10-02 09:03:51.6423 Info Loading assembly: NLog.Web.AspNetCore
+2018-10-02 09:03:51.6423 Info Adding target ColoredConsole Target[console]
+2018-10-02 09:03:51.6423 Info Adding target File Target[allfile]
+2018-10-02 09:03:51.6423 Info Configured from an XML element in F:\VsProjects\building-admin\BuildingAdmin.Mvc\bin\Debug\netcoreapp2.1\Configs/nlog.config...
+2018-10-02 09:03:51.6423 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: allfile
+2018-10-02 09:03:51.6423 Info Closing old configuration.
+2018-10-02 09:03:51.6697 Info Found 30 configuration items
+2018-10-02 09:03:51.9336 Info Message Template Auto Format enabled
+2018-10-02 09:03:51.9336 Info Found 30 configuration items
+2018-10-02 09:03:51.9336 Info Loading assembly: NLog.Web.AspNetCore
+2018-10-02 09:03:51.9336 Info Adding target ColoredConsole Target[console]
+2018-10-02 09:03:51.9336 Info Adding target File Target[allfile]
+2018-10-02 09:03:51.9336 Info Configured from an XML element in F:\VsProjects\building-admin\BuildingAdmin.Mvc\bin\Debug\netcoreapp2.1\Configs/nlog.config...
+2018-10-02 09:03:51.9336 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: allfile
+2018-10-02 09:03:51.9336 Info Closing old configuration.
+2018-10-02 09:03:51.9336 Info Found 30 configuration items
+2018-10-02 09:06:36.9043 Info Message Template Auto Format enabled
+2018-10-02 09:06:36.9043 Info Loading assembly: NLog.Web.AspNetCore
+2018-10-02 09:06:36.9718 Info Adding target ColoredConsole Target[console]
+2018-10-02 09:06:36.9831 Info Adding target File Target[allfile]
+2018-10-02 09:06:36.9831 Info Configured from an XML element in F:\VsProjects\building-admin\BuildingAdmin.Mvc\bin\Debug\netcoreapp2.1\Configs/nlog.config...
+2018-10-02 09:06:36.9996 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: allfile
+2018-10-02 09:06:36.9996 Info Found 30 configuration items
+2018-10-02 09:06:37.1778 Info Message Template Auto Format enabled
+2018-10-02 09:06:37.1778 Info Found 30 configuration items
+2018-10-02 09:06:37.1778 Info Loading assembly: NLog.Web.AspNetCore
+2018-10-02 09:06:37.1778 Info Adding target ColoredConsole Target[console]
+2018-10-02 09:06:37.1778 Info Adding target File Target[allfile]
+2018-10-02 09:06:37.1778 Info Configured from an XML element in F:\VsProjects\building-admin\BuildingAdmin.Mvc\bin\Debug\netcoreapp2.1\Configs/nlog.config...
+2018-10-02 09:06:37.1778 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: allfile
+2018-10-02 09:06:37.1823 Info Closing old configuration.
+2018-10-02 09:06:37.2029 Info Found 30 configuration items
+2018-10-02 09:06:37.4372 Info Message Template Auto Format enabled
+2018-10-02 09:06:37.4372 Info Found 30 configuration items
+2018-10-02 09:06:37.4372 Info Loading assembly: NLog.Web.AspNetCore
+2018-10-02 09:06:37.4372 Info Adding target ColoredConsole Target[console]
+2018-10-02 09:06:37.4372 Info Adding target File Target[allfile]
+2018-10-02 09:06:37.4372 Info Configured from an XML element in F:\VsProjects\building-admin\BuildingAdmin.Mvc\bin\Debug\netcoreapp2.1\Configs/nlog.config...
+2018-10-02 09:06:37.4372 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: allfile
+2018-10-02 09:06:37.4372 Info Closing old configuration.
+2018-10-02 09:06:37.4372 Info Found 30 configuration items
+2018-10-02 09:08:06.3444 Info Message Template Auto Format enabled
+2018-10-02 09:08:06.3444 Info Loading assembly: NLog.Web.AspNetCore
+2018-10-02 09:08:06.4116 Info Adding target ColoredConsole Target[console]
+2018-10-02 09:08:06.4224 Info Adding target File Target[allfile]
+2018-10-02 09:08:06.4224 Info Configured from an XML element in F:\VsProjects\building-admin\BuildingAdmin.Mvc\bin\Debug\netcoreapp2.1\Configs/nlog.config...
+2018-10-02 09:08:06.4348 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: allfile
+2018-10-02 09:08:06.4348 Info Found 30 configuration items
+2018-10-02 09:08:06.6191 Info Message Template Auto Format enabled
+2018-10-02 09:08:06.6191 Info Found 30 configuration items
+2018-10-02 09:08:06.6191 Info Loading assembly: NLog.Web.AspNetCore
+2018-10-02 09:08:06.6191 Info Adding target ColoredConsole Target[console]
+2018-10-02 09:08:06.6191 Info Adding target File Target[allfile]
+2018-10-02 09:08:06.6191 Info Configured from an XML element in F:\VsProjects\building-admin\BuildingAdmin.Mvc\bin\Debug\netcoreapp2.1\Configs/nlog.config...
+2018-10-02 09:08:06.6191 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: allfile
+2018-10-02 09:08:06.6191 Info Closing old configuration.
+2018-10-02 09:08:06.6453 Info Found 30 configuration items
+2018-10-02 09:08:06.8775 Info Message Template Auto Format enabled
+2018-10-02 09:08:06.8775 Info Found 30 configuration items
+2018-10-02 09:08:06.8775 Info Loading assembly: NLog.Web.AspNetCore
+2018-10-02 09:08:06.8775 Info Adding target ColoredConsole Target[console]
+2018-10-02 09:08:06.8775 Info Adding target File Target[allfile]
+2018-10-02 09:08:06.8775 Info Configured from an XML element in F:\VsProjects\building-admin\BuildingAdmin.Mvc\bin\Debug\netcoreapp2.1\Configs/nlog.config...
+2018-10-02 09:08:06.8775 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: allfile
+2018-10-02 09:08:06.8775 Info Closing old configuration.
+2018-10-02 09:08:06.8775 Info Found 30 configuration items
+2018-10-02 09:09:58.8854 Info Message Template Auto Format enabled
+2018-10-02 09:09:58.8854 Info Loading assembly: NLog.Web.AspNetCore
+2018-10-02 09:09:58.9525 Info Adding target ColoredConsole Target[console]
+2018-10-02 09:09:58.9641 Info Adding target File Target[allfile]
+2018-10-02 09:09:58.9641 Info Configured from an XML element in F:\VsProjects\building-admin\BuildingAdmin.Mvc\bin\Debug\netcoreapp2.1\Configs/nlog.config...
+2018-10-02 09:09:58.9641 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: allfile
+2018-10-02 09:09:58.9865 Info Found 30 configuration items
+2018-10-02 09:09:59.1671 Info Message Template Auto Format enabled
+2018-10-02 09:09:59.1671 Info Found 30 configuration items
+2018-10-02 09:09:59.1671 Info Loading assembly: NLog.Web.AspNetCore
+2018-10-02 09:09:59.1671 Info Adding target ColoredConsole Target[console]
+2018-10-02 09:09:59.1671 Info Adding target File Target[allfile]
+2018-10-02 09:09:59.1671 Info Configured from an XML element in F:\VsProjects\building-admin\BuildingAdmin.Mvc\bin\Debug\netcoreapp2.1\Configs/nlog.config...
+2018-10-02 09:09:59.1671 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: allfile
+2018-10-02 09:09:59.1671 Info Closing old configuration.
+2018-10-02 09:09:59.1938 Info Found 30 configuration items
+2018-10-02 09:09:59.4351 Info Message Template Auto Format enabled
+2018-10-02 09:09:59.4351 Info Found 30 configuration items
+2018-10-02 09:09:59.4351 Info Loading assembly: NLog.Web.AspNetCore
+2018-10-02 09:09:59.4351 Info Adding target ColoredConsole Target[console]
+2018-10-02 09:09:59.4351 Info Adding target File Target[allfile]
+2018-10-02 09:09:59.4351 Info Configured from an XML element in F:\VsProjects\building-admin\BuildingAdmin.Mvc\bin\Debug\netcoreapp2.1\Configs/nlog.config...
+2018-10-02 09:09:59.4351 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: allfile
+2018-10-02 09:09:59.4351 Info Closing old configuration.
+2018-10-02 09:09:59.4351 Info Found 30 configuration items
+2018-10-02 09:12:24.8581 Info Message Template Auto Format enabled
+2018-10-02 09:12:24.8581 Info Loading assembly: NLog.Web.AspNetCore
+2018-10-02 09:12:24.9268 Info Adding target ColoredConsole Target[console]
+2018-10-02 09:12:24.9383 Info Adding target File Target[allfile]
+2018-10-02 09:12:24.9383 Info Configured from an XML element in F:\VsProjects\building-admin\BuildingAdmin.Mvc\bin\Debug\netcoreapp2.1\Configs/nlog.config...
+2018-10-02 09:12:24.9526 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: allfile
+2018-10-02 09:12:24.9526 Info Found 30 configuration items
+2018-10-02 09:12:25.1363 Info Message Template Auto Format enabled
+2018-10-02 09:12:25.1363 Info Found 30 configuration items
+2018-10-02 09:12:25.1363 Info Loading assembly: NLog.Web.AspNetCore
+2018-10-02 09:12:25.1363 Info Adding target ColoredConsole Target[console]
+2018-10-02 09:12:25.1363 Info Adding target File Target[allfile]
+2018-10-02 09:12:25.1363 Info Configured from an XML element in F:\VsProjects\building-admin\BuildingAdmin.Mvc\bin\Debug\netcoreapp2.1\Configs/nlog.config...
+2018-10-02 09:12:25.1363 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: allfile
+2018-10-02 09:12:25.1363 Info Closing old configuration.
+2018-10-02 09:12:25.1623 Info Found 30 configuration items
+2018-10-02 09:12:25.3984 Info Message Template Auto Format enabled
+2018-10-02 09:12:25.3984 Info Found 30 configuration items
+2018-10-02 09:12:25.3984 Info Loading assembly: NLog.Web.AspNetCore
+2018-10-02 09:12:25.4001 Info Adding target ColoredConsole Target[console]
+2018-10-02 09:12:25.4001 Info Adding target File Target[allfile]
+2018-10-02 09:12:25.4001 Info Configured from an XML element in F:\VsProjects\building-admin\BuildingAdmin.Mvc\bin\Debug\netcoreapp2.1\Configs/nlog.config...
+2018-10-02 09:12:25.4001 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: allfile
+2018-10-02 09:12:25.4001 Info Closing old configuration.
+2018-10-02 09:12:25.4001 Info Found 30 configuration items
+2018-10-02 09:13:57.1888 Info Message Template Auto Format enabled
+2018-10-02 09:13:57.1992 Info Loading assembly: NLog.Web.AspNetCore
+2018-10-02 09:13:57.2594 Info Adding target ColoredConsole Target[console]
+2018-10-02 09:13:57.2704 Info Adding target File Target[allfile]
+2018-10-02 09:13:57.2777 Info Configured from an XML element in F:\VsProjects\building-admin\BuildingAdmin.Mvc\bin\Debug\netcoreapp2.1\Configs/nlog.config...
+2018-10-02 09:13:57.2777 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: allfile
+2018-10-02 09:13:57.2930 Info Found 30 configuration items
+2018-10-02 09:13:57.4667 Info Message Template Auto Format enabled
+2018-10-02 09:13:57.4667 Info Found 30 configuration items
+2018-10-02 09:13:57.4667 Info Loading assembly: NLog.Web.AspNetCore
+2018-10-02 09:13:57.4667 Info Adding target ColoredConsole Target[console]
+2018-10-02 09:13:57.4667 Info Adding target File Target[allfile]
+2018-10-02 09:13:57.4667 Info Configured from an XML element in F:\VsProjects\building-admin\BuildingAdmin.Mvc\bin\Debug\netcoreapp2.1\Configs/nlog.config...
+2018-10-02 09:13:57.4667 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: allfile
+2018-10-02 09:13:57.4667 Info Closing old configuration.
+2018-10-02 09:13:57.4929 Info Found 30 configuration items
+2018-10-02 09:13:57.7465 Info Message Template Auto Format enabled
+2018-10-02 09:13:57.7465 Info Found 30 configuration items
+2018-10-02 09:13:57.7465 Info Loading assembly: NLog.Web.AspNetCore
+2018-10-02 09:13:57.7465 Info Adding target ColoredConsole Target[console]
+2018-10-02 09:13:57.7465 Info Adding target File Target[allfile]
+2018-10-02 09:13:57.7465 Info Configured from an XML element in F:\VsProjects\building-admin\BuildingAdmin.Mvc\bin\Debug\netcoreapp2.1\Configs/nlog.config...
+2018-10-02 09:13:57.7465 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: allfile
+2018-10-02 09:13:57.7465 Info Closing old configuration.
+2018-10-02 09:13:57.7465 Info Found 30 configuration items
+2018-10-02 09:28:00.6416 Info Message Template Auto Format enabled
+2018-10-02 09:28:00.6508 Info Loading assembly: NLog.Web.AspNetCore
+2018-10-02 09:28:00.7100 Info Adding target ColoredConsole Target[console]
+2018-10-02 09:28:00.7217 Info Adding target File Target[allfile]
+2018-10-02 09:28:00.7291 Info Configured from an XML element in F:\VsProjects\building-admin\BuildingAdmin.Mvc\bin\Debug\netcoreapp2.1\Configs/nlog.config...
+2018-10-02 09:28:00.7291 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: allfile
+2018-10-02 09:28:00.7291 Info Found 30 configuration items
+2018-10-02 09:28:00.9170 Info Message Template Auto Format enabled
+2018-10-02 09:28:00.9170 Info Found 30 configuration items
+2018-10-02 09:28:00.9170 Info Loading assembly: NLog.Web.AspNetCore
+2018-10-02 09:28:00.9170 Info Adding target ColoredConsole Target[console]
+2018-10-02 09:28:00.9170 Info Adding target File Target[allfile]
+2018-10-02 09:28:00.9170 Info Configured from an XML element in F:\VsProjects\building-admin\BuildingAdmin.Mvc\bin\Debug\netcoreapp2.1\Configs/nlog.config...
+2018-10-02 09:28:00.9170 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: allfile
+2018-10-02 09:28:00.9170 Info Closing old configuration.
+2018-10-02 09:28:00.9423 Info Found 30 configuration items
+2018-10-02 09:28:01.1864 Info Message Template Auto Format enabled
+2018-10-02 09:28:01.1864 Info Found 30 configuration items
+2018-10-02 09:28:01.1864 Info Loading assembly: NLog.Web.AspNetCore
+2018-10-02 09:28:01.1864 Info Adding target ColoredConsole Target[console]
+2018-10-02 09:28:01.1864 Info Adding target File Target[allfile]
+2018-10-02 09:28:01.1864 Info Configured from an XML element in F:\VsProjects\building-admin\BuildingAdmin.Mvc\bin\Debug\netcoreapp2.1\Configs/nlog.config...
+2018-10-02 09:28:01.1864 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: allfile
+2018-10-02 09:28:01.1864 Info Closing old configuration.
+2018-10-02 09:28:01.1864 Info Found 30 configuration items

@@ -1,0 +1,37 @@
+[
+    {
+        "Key": "The page was not found",
+        "Values": {
+          "ro": "Pagina nu a fost gasita",
+          "en": "The page was not found"
+        }
+    },
+    {
+        "Key": "The page you are trying to reach was not found",
+        "Values": {
+          "ro": "Pagina pe care o cautati nu a fost gasita",
+          "en": "The page you are trying to reach was not found"
+        }
+    },
+    {
+        "Key": "We have failed",
+        "Values": {
+          "ro": "Am dat gres",
+          "en": "We have failed"
+        }
+    },
+    {
+        "Key": "We have failed text",
+        "Values": {
+          "ro": "Momentan pagina este indisponibila. Ne cerem scuze pentru inconvenient. Va rugam reveniti mai tarziu. Va rugam sa ne contactati daca eroare persista",
+          "en": "For now the page is not available. We are very sorry for this. Please come back later. Please contact us if the error persist "
+        }
+    },
+    {
+        "Key": "You have no rights to access this page",
+        "Values": {
+          "ro": "Nu ai drepturi sa accesati aceasta pagina",
+          "en": "You have no rights to access this page"
+        }
+    }
+]

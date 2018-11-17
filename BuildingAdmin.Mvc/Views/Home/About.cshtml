@@ -1,0 +1,75 @@
+﻿@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<string> Localizer
+
+@{
+    ViewData["Title"] = Localizer["About us"];
+    Layout ="~/Views/Shared/_LayoutOutsideDescription.cshtml";
+}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="title">@Localizer["About us"]</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main main-raised">
+    <div class="container">
+        <div class="section text-center">
+            <div class="row">
+                
+                <div class="col-md-8 ml-auto mr-auto">
+                    <h2 class="title">Let&apos;s talk product</h2>                    
+                    <h5 class="description"> Building-admin.com inseamna un administrator relaxat</h5>
+                    <h5 class="description"> Te invitam sa incerci platforma noastra</h5>
+                    <h5 class="description"> Platforma noastra online isi doreste ca sa ajute administratorii sa pastreze intr-un sigur loc toata documentatia cat si sa ii ajute sa creeze listele de cheltuieli mai usor si rapid.</h5>
+                    <h5 class="description"> Oferta noastra va include</h5>
+                </div>
+            </div>
+            <div class="features">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="info">
+                            <div class="icon icon-info">
+                                <i class="material-icons">list</i>
+                            </div>
+                            <h4 class="info-title">@Localizer["Anytime, anywhere and any device"]</h4>
+                            <p>@Localizer["Anytime, anywhere and any device text"]</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="info">
+                            <div class="icon icon-danger">
+                                <i class="material-icons">email</i>
+                            </div>
+                            <h4 class="info-title">@Localizer["Email notification"]</h4>
+                            <p>@Localizer["Email notification text"]</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="info">
+                            <div class="icon icon-warning">
+                                <i class="material-icons">airplay</i>
+                            </div>
+                            <h4 class="info-title">@Localizer["Innovative design"]</h4>
+                            <p>@Localizer["Innovative design text"]</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="info">
+                            <div class="icon icon-success">
+                                <i class="material-icons">flash_on</i>
+                            </div>
+                            <h4 class="info-title">@Localizer["Quick and easy"]</h4>
+                            <p>@Localizer["Quick and easy text"]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

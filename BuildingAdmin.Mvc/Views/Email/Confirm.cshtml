@@ -1,0 +1,19 @@
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<string> Localizer
+
+@{
+    ViewData["Title"] = Localizer["Register confirmation"];
+    ViewBag.PageType = "landing-page";
+}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="title">@Localizer["Thank you"]!</h1>
+                <div><h4>@Localizer["An email was sent to"] <strong>@ViewBag.Email</strong>. @Localizer["After you activate your account you'll be able to sign in"].</h4></div>
+                <div><h4>@Localizer["Not found email message"]</h4></div> <br />
+                <a href="@Url.AbsoluteAction("Confirm", "Email", new{id= @ViewBag.Resend})" class="btn btn-success btn-raised btn-lg">@Localizer["Resend email"]</a>
+            </div>
+        </div>
+    </div>
+</div>

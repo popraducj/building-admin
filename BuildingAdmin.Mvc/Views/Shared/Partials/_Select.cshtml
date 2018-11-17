@@ -1,0 +1,6 @@
+@model SelectModel
+
+<select class="selectpicker" asp-for="Id" asp-items="@(new SelectList(Model.Options,"Id","Name"))"  data-style="select-with-transition" title="Single Select" data-size="7" tabindex="-98" aria-expanded="true">
+    <option class="bs-title-option" value="">@Model.Name</option>
+    <option disabled="">@Model.Name</option>
+</select>

@@ -1,0 +1,148 @@
+@model UserRegistration
+@using Microsoft.Extensions.Localization
+@inject Microsoft.Extensions.Configuration.IConfiguration configuration
+@inject IStringLocalizer<string> Localizer
+@{
+    ViewData["Title"] = Localizer["Sign up"];
+    ViewBag.PageType = "signup-page";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 ml-auto mr-auto">
+            <div class="card card-signup">
+                <h2 class="card-title text-center">@Localizer["Sign up"]</h2>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-5 ml-auto">
+                            <div class="info info-horizontal">
+                                <div class="icon icon-rose">
+                                    <i class="material-icons">list</i>
+                                </div>
+                                <div class="description">
+                                    <h4 class="info-title">@Localizer["Anytime, anywhere and any device"]</h4>
+                                    <p class="description">@Localizer["Anytime, anywhere and any device text"]</p>
+                                </div>
+                            </div>
+                            <div class="info info-horizontal">
+                                <div class="icon icon-primary">
+                                    <i class="material-icons">flash_on</i>
+                                </div>
+                                <div class="description">
+                                    <h4 class="info-title">@Localizer["Quick and easy"]</h4>
+                                    <p class="description">@Localizer["Quick and easy text"]</p>
+                                </div>
+                            </div>
+                            <div class="info info-horizontal">
+                                <div class="icon icon-info">
+                                    <i class="material-icons">email</i>
+                                </div>
+                                <div class="description">
+                                    <h4 class="info-title">@Localizer["Email notification"]</h4>
+                                    <p class="description">@Localizer["Email notification text"]</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 mr-auto">
+                            <form class="form" asp-controller="Account" asp-action="Register" method="post">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">
+                                                <i class="material-icons">face</i>
+                                            </span>
+                                        </div>
+                                        <input type="text" asp-for="FirstName" class="form-control" required minlength="3" maxlength="100">
+                                        <span class="form-control-feedback" style="top:0px;">
+                                            <i class="material-icons">clear</i>
+                                        </span>
+                                    </div>
+                                    <span asp-validation-for="FirstName" hidden="hidden" class="text-danger"></span>                                  
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">
+                                                <i class="material-icons">face</i>
+                                            </span>
+                                        </div>
+                                        <input type="text" asp-for="LastName" class="form-control" required minlength="3" maxlength="100">
+                                        <span class="form-control-feedback" style="top:0px;">
+                                            <i class="material-icons">clear</i>
+                                        </span>
+                                    </div>
+                                    <span asp-validation-for="LastName" hidden="hidden" class="text-danger"></span>                                  
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">
+                                                <i class="material-icons">mail</i>
+                                            </span>
+                                        </div>
+                                        <input type="email" asp-for="Email" class="form-control" required>
+                                        <span class="form-control-feedback" id="EmailSpan" name="EmailSpan" style="top:0px;">
+                                            <i class="material-icons">clear</i>
+                                        </span>
+                                    </div>
+                                <span asp-validation-for="Email" hidden="hidden" class="text-danger"></span> 
+                                </div>  
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">
+                                                <i class="material-icons">lock_outline</i>
+                                            </span>
+                                        </div>
+                                        <input asp-for="Password" class="form-control" required pattern="^((?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])|(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[^a-zA-Z0-9])|(?=.*?[A-Z])(?=.*?[0-9])(?=.*?[^a-zA-Z0-9])|(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^a-zA-Z0-9])).{8,}$" >
+                                        <span class="form-control-feedback" style="top:0px;">
+                                            <i class="material-icons">clear</i>
+                                        </span>
+                                    </div>
+                                <span asp-validation-for="Password" hidden="hidden" class="text-danger"></span> 
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">
+                                                <i class="material-icons">lock_outline</i>
+                                            </span>
+                                        </div>
+                                        <input asp-for="ConfirmPassword" class="form-control" required >
+                                        <span class="form-control-feedback" style="top:0px;">
+                                            <i class="material-icons">clear</i>
+                                        </span>
+                                    </div>
+                                <span asp-validation-for="ConfirmPassword" hidden="hidden" class="text-danger"></span> 
+                                </div>
+                                <div class="form-group">
+                                    <div  style="margin-left:17px" class="g-recaptcha" data-sitekey="@(configuration["ReCaptcha:SiteKey"])"></div>
+                                    <span asp-validation-for="Captcha" class="text-danger"></span>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" asp-for="Terms">
+                                        <span class="form-check-sign">
+                                            <span class="check"></span>
+                                        </span>
+                                        @Localizer["I agree with"]
+                                        <a href="@Url.AbsoluteAction("Terms", "Help")">@Localizer["terms and conditions"]</a>.
+                                    </label>
+                                    <div style="margin-left: 36px" class="error">
+                                    <span asp-validation-for="Terms" class="text-danger"></span> 
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <button id="submit" name="submit" type="submit" class="btn btn-success btn-round">@Localizer["Sign me up"]!</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+</div>
+@section Scripts {
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+}

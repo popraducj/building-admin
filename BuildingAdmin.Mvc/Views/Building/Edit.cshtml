@@ -1,0 +1,79 @@
+@model BuildingModel
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<string> Localizer
+    
+@{
+    ViewData["Title"] = Localizer["Edit building"];
+    Layout ="~/Views/Shared/Dashboard/_LayoutDashboard.cshtml";
+}
+<div class="row">
+    <div class="col-lg-12 col-md-12">
+        <div class="card">
+            <form method="POST" class="form" asp-controller="Building" asp-action="Edit">
+            <div class="card-body">
+              <div class="row" style="padding-top: 10px">
+                <div class="col-md-1 col-xs-2">
+                  <label asp-for="Name" class="pull-right margin-top-10"></label>
+                </div>
+                <div class="col-md-5 col-xs-9">
+                  <div class="form-group">
+                      <div class="input-group">
+                          <input type="text" asp-for="Name" class="form-control" readonly>
+                      </div>
+                      <span asp-validation-for="Name" hidden="hidden" class="text-danger"></span>                                  
+                  </div>
+                </div>
+                  <div class="col-md-1 col-xs-2">
+                    <label asp-for="Address" class="pull-right margin-top-10"></label>
+                  </div>
+                  <div class="col-md-4 col-xs-9">
+                  <div class="form-group">
+                      <div class="input-group">
+                          <input type="text" asp-for="Address" class="form-control" readonly>
+                      </div>
+                      <span asp-validation-for="Address" hidden="hidden" class="text-danger"></span>                                  
+                  </div>
+                </div>
+              </div>
+               <div class="row">
+                  <div class="col-md-1 col-xs-2">
+                    <label asp-for="CUI" class="pull-right margin-top-10"></label>
+                  </div>
+                <div class="col-md-4 col-xs-9">
+                  <div class="form-group">
+                      <div class="input-group">
+                          <input type="text" asp-for="CUI" class="form-control" readonly>
+                      </div>
+                      <span asp-validation-for="CUI" hidden="hidden" class="text-danger"></span>                                  
+                  </div>
+                </div>
+                <div class="col-md-1 col-xs-2">
+                  <label asp-for="Penalities" class="pull-right margin-top-10"></label>
+                </div>
+                <div class="col-md-1 col-xs-9">
+                  <div class="form-group">
+                      <div class="input-group">
+                          <input type="text" asp-for="Penalities" class="form-control" required>                          
+                      </div>    
+                  </div>
+                </div>
+                <div class="col-md-1 col-xs-2">
+                  <label asp-for="IBAN" class="pull-right margin-top-10"></label>
+                </div>
+                <div class="col-md-3 col-xs-9">
+                  <div class="form-group">
+                      <div class="input-group">
+                          <input type="text" asp-for="IBAN" class="form-control">
+                      </div>
+                      <span asp-validation-for="IBAN" hidden="hidden" class="text-danger"></span>                                  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button type="submit" class="btn btn-primary dashboard-btn">@Localizer["Save"]</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>

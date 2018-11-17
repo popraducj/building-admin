@@ -1,0 +1,17 @@
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<string> Localizer
+
+@{
+    ViewBag.PageType = "landing-page";
+    ViewData["Title"] = Localizer["Account activation"];
+}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="title">@Localizer["The account is active now"]</h1>
+                <h4>@Localizer["Your account has been activated with success. We wish you a great day"]!</h4> <br />
+                <a href="@Url.AbsoluteAction("Login", "Account")" class="btn btn-success btn-raised btn-lg">@Localizer["Sign in"]</a> 
+            </div>
+        </div>
+    </div>
+</div>

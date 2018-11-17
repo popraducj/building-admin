@@ -1,0 +1,34 @@
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<string> Localizer
+  <footer class="footer ">
+    <div class="container">
+        <nav class="pull-left">
+            <ul>
+                <li>
+                    <a href="@Url.AbsoluteAction("Index", "Home")">
+                        @Localizer["Building admin"]
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.AbsoluteAction("Index", "Contact")">
+                        @Localizer["Contact us"]
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="copyright pull-right">
+            &copy;
+            @Localizer["design made with"] <i class="material-icons">favorite</i> @Localizer["by"]
+            <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>
+        </div>
+    </div>
+</footer>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120899508-2"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-120899508-2');
+</script>

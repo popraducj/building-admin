@@ -1,0 +1,121 @@
+@model ServicesModel
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<string> Localizer
+    
+@{    
+    ViewData["Title"] = Localizer["Add service"];
+    Layout ="~/Views/Shared/Dashboard/_LayoutDashboard.cshtml";
+
+    var model = new SelectModel(ViewBag.OtherServices){
+        Name = Localizer["Choose service"]    
+    };    
+}
+
+<form class="form" asp-controller="Service" asp-action="AddService" method="post">
+    <div class="row">
+        <div class="col-md-3">        
+        @await Html.PartialAsync("/Views/Shared/Partials/_Select.cshtml", model)
+        </div>
+        <input type="hidden" asp-for="BuildingId" />
+        <div class="col-lg-2">
+            <button id="submit" name="submit" type="submit" class="btn btn-success btn-round">@Localizer["Add service"]</button>
+        </div>
+    </div>
+        
+</form>
+
+
+<div class="row">
+    <div class="col-lg-12 col-lg-12">
+        <div class="card">
+            <div class="card-header" data-background-color="purple">
+                <h4 class="title">@Localizer["Add new service"]</h4>
+            </div>
+            <form method="POST" class="form" asp-controller="service" asp-action="Add">
+            <div class="card-body">
+              <div class="row" style="padding-top: 10px">
+                <div class="col-lg-1 col-md-2">
+                  <label asp-for="Name" class="pull-right text-right margin-top-10"></label>
+                </div>
+                <div class="col-lg-4 col-md-9">
+                  <div class="form-group">
+                      <div class="input-group">
+                          <input type="text" asp-for="Name" class="form-control" required minlength="3" maxlength="500">
+                          <span class="form-control-feedback" style="top:0px;">
+                              <i class="material-icons">clear</i>
+                          </span>
+                      </div>
+                      <span asp-validation-for="Name" hidden="hidden" class="text-danger"></span>                                  
+                  </div>
+                </div>
+                  <div class="col-lg-1 col-md-2">
+                    <label asp-for="Unit" class="pull-right text-right margin-top-10"></label>
+                  </div>
+                  <div class="col-lg-3 col-md-9">
+                  <div class="form-group">
+                      <div class="input-group">
+                          <input type="text" asp-for="Unit" class="form-control"  required maxlength="100">
+                          <span class="form-control-feedback" style="top:0px;">
+                              <i class="material-icons">clear</i>
+                          </span>
+                      </div>
+                      <span asp-validation-for="Unit" hidden="hidden" class="text-danger"></span>                                  
+                  </div>
+                </div>
+                   <div>
+                        <div class="col-lg-1 col-md-2">
+                            <label asp-for="WithPersonalReading" class="pull-right text-right margin-top-10"></label>
+                        </div>
+                        <div class="col-lg-1 col-md-9">
+                            <div class="form-check" style="margin-top:0px;">
+
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" asp-for="WithPersonalReading">   
+                                    <span class="form-check-sign">
+                                        <span class="check"></span>
+                                    </span>     
+                                </label>        
+                            </div>
+                        </div>
+                    </div>
+              </div>
+               <div class="row">
+                    <div id="displayName"  style="display:none">
+                        <div class="col-lg-2 col-md-2">
+                            <label asp-for="DisplayNameForApartments" class="pull-right text-right margin-top-10"></label>
+                        </div>
+                        <div class="col-lg-5 col-md-9">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="text" asp-for="DisplayNameForApartments" class="form-control">
+                                </div>
+                                <span asp-validation-for="DisplayNameForApartments" hidden="hidden" class="text-danger"></span>                                  
+                            </div>
+                        </div>
+                    </div>
+                    <div id="setDefaultValue" style="display:none">
+                        <div class="col-lg-1 col-md-2">
+                            <label asp-for="DefaultValue" class="pull-right text-right margin-top-10"></label>
+                        </div>
+                        <div class="col-lg-2 col-md-9">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="text" asp-for="DefaultValue" class="form-control text-center">
+                                </div>
+                                <span asp-validation-for="DefaultValue" hidden="hidden" class="text-danger"></span>                                  
+                            </div>
+                        </div>
+                    </div>
+                <input type="hidden" asp-for="BuildingId" />
+              </div>
+            <div class="card-footer pull-right">
+                    <input type="submit" value="@Localizer["Save"]" class="btn btn-primary dashboard-btn" />
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/dashboard/services.js"></script>
+}

@@ -1,0 +1,21 @@
+﻿@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<string> Localizer
+
+@using System.Security.Claims;
+@{
+    ViewData["Title"] = Localizer["Forbidden"];
+    ViewBag.PageType = "landing-page";
+    ViewData["BackgroundImageAlt"] = Localizer["BackgroundImageAlt"];
+}
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="title">@Localizer["Hello"] @User.FindFirstValue(ClaimTypes.Surname)</h1>
+                <h4>@Localizer["You have no rights to access this page"]</h4> <br />
+                <a href="@Url.AbsoluteAction("Index", "Home")" class="btn btn-danger btn-raised btn-lg">@Localizer["Home"]</a>
+            </div>
+        </div>
+    </div>
+</div>

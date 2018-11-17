@@ -1,0 +1,78 @@
+@model ContactModel
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<string> Localizer
+    
+@{
+    ViewData["Title"] = Localizer["Contact us"];
+    Layout ="~/Views/Shared/_LayoutOutsideDescription.cshtml";
+    ViewData["Description"] = Localizer["Meta description contact"];
+    ViewData["Keywords"] = Localizer["Keywords contact"];
+    ViewData["BackgroundImageAlt"] = Localizer["BackgroundImageAlt"];
+}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="title">@Localizer["Contact us"]</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main main-raised">
+    <div class="container">
+        <div class="section section-contacts">
+            <div class="row">
+                <div class="col-md-8 ml-auto mr-auto">
+                    <h2 class="text-center title">@Localizer["Work with us"]</h2>
+                    <h4 class="text-center description">
+                        @Localizer["If you have any feedback, questions, suggestions or even solutions fill in the form"]
+                    </h4>
+                    <form class="contact-form" asp-controller="Contact" asp-action="Index" method="post">
+                        <div class="row">
+                            <div class="col-md-6 form-group bmd-form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="material-icons">face</i>
+                                        </span>
+                                    </div>
+                                    <input type="text" class="form-control" required asp-for="Name" minlength="3" maxlength="100">
+                                </div>                                
+                            </div>
+                            <div class="col-md-6 form-group bmd-form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="material-icons">email</i>
+                                        </span>
+                                    </div>
+                                    <input type="email" class="form-control" required asp-for="Email">
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 form-group bmd-form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="material-icons">message</i>
+                                        </span>
+                                    </div>
+                                     <textarea type="text" class="form-control" rows="4" asp-for="Message" minlength="3" maxlength="500"></textarea>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 ml-auto mr-auto text-center">
+                                <button class="btn btn-primary btn-raised">
+                                    @Localizer["Send Message"]
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

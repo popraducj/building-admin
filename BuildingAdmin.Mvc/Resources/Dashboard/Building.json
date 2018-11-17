@@ -1,0 +1,163 @@
+[
+    {
+        "Key": "CUI",
+        "Values": {
+          "ro": "CUI",
+          "en": "CUI"
+        }
+    },
+    {
+        "Key": "Penalities",
+        "Values": {
+          "ro": "Penalizari",
+          "en": "Penalities"
+        }
+    },
+    {
+        "Key": "IBAN",
+        "Values": {
+          "ro": "IBAN",
+          "en": "IBAN"
+        }
+    },
+    {
+        "Key": "Add new building",
+        "Values": {
+          "ro": "Adauga o noua cladire",
+          "en": "Add new building"
+        }
+    },
+    {
+        "Key": "Create",
+        "Values": {
+          "ro": "Creaza",
+          "en": "Create"
+        }
+    },
+    {
+        "Key": "Item no",
+        "Values": {
+          "ro": "Numar crt.",
+          "en": "Item no"
+        }
+    },
+    {
+        "Key": "Buildings overview",
+        "Values": {
+          "ro": "O vedere rapida asupra tuturor cladirilor",
+          "en": "A quick overview over all buildings"
+        }
+    },
+    {
+        "Key": "The name should be between {2} and {1} characters long",
+        "Values": {
+          "ro": "Numele trebuie trebuie sa fie intre {2} si {1} charactere lungime.",
+          "en": "The name should be between {2} and {1} characters long"
+        }
+    },
+    {
+        "Key": "The address should be between {2} and {1} characters long",
+        "Values": {
+          "ro": "Adresa trebuie trebuie sa fie intre {2} si {1} charactere lungime.",
+          "en": "The address should be between {2} and {1} characters long"
+        }
+    },
+    {
+        "Key": "The CUI should be between {2} and {1} characters long",
+        "Values": {
+          "ro": "CUI-ul trebuie trebuie sa fie intre {2} si {1} charactere lungime.",
+          "en": "The CUI should be between {2} and {1} characters long"
+        }
+    },
+    {
+        "Key": "The name field is mandatory",
+        "Values": {
+          "ro": "Numele este camp obligatoriu",
+          "en": "The name field is mandatory"
+        }
+    },
+    {
+        "Key": "The address field is mandatory",
+        "Values": {
+          "ro": "Adresa este camp obligatoriu",
+          "en": "The address field is mandatory"
+        }
+    },
+    {
+        "Key": "The number of persons field is mandatory",
+        "Values": {
+          "ro": "Numarul de persoane este camp obligatoriu",
+          "en": "The number of persons field is mandatory"
+        }
+    },
+    {
+        "Key": "The CUI field is mandatory",
+        "Values": {
+          "ro": "CUI-ul este camp obligatoriu",
+          "en": "The CUI field is mandatory"
+        }
+    },
+    {
+        "Key": "The cut field is mandatory",
+        "Values": {
+          "ro": "Cota parte este camp obligatoriu",
+          "en": "The cut field is mandatory"
+        }
+    },
+    {
+        "Key": "Edit building",
+        "Values": {
+          "ro": "Editeaza datele cladirii",
+          "en": "Edit building"
+        }
+    },
+    {
+        "Key": "Basic",
+        "Values": {
+          "ro": "Basic",
+          "en": "Basic"
+        }
+    },
+    {
+        "Key": "Number of persons",
+        "Values": {
+          "ro": "Numar de persoane",
+          "en": "Number of persons"
+        }
+    },
+    {
+        "Key": "Phone",
+        "Values": {
+          "ro": "Telefon",
+          "en": "Phone"
+        }
+    },
+    {
+        "Key": "Cut",
+        "Values": {
+          "ro": "Cota parte",
+          "en": "Cut"
+        }
+    },
+    {
+        "Key": "Save and go to apartments",
+        "Values": {
+          "ro": "Salveaza si dute la apartamente",
+          "en": "Save and go to apartments"
+        }
+    },
+    {
+        "Key": "Choose building",
+        "Values": {
+          "ro": "Alege cladirea",
+          "en": "Choose building"
+        }
+    },
+    {
+        "Key": "Services",
+        "Values": {
+            "ro": "Servicii",
+            "en": "Services"
+        }
+    }
+]

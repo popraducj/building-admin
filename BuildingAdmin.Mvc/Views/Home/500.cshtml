@@ -1,0 +1,18 @@
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<string> Localizer
+
+@{
+    ViewData["Title"] = Localizer["We have failed"];
+    ViewData["BackgroundImageAlt"] = Localizer["BackgroundImageAlt"];
+}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="title">@Localizer["We have failed"]</h1>
+                <h4>@Localizer["We have failed text"].</h4> <br />
+                <a href="@Url.AbsoluteAction("Index", "Contact")" class="btn btn-primary btn-raised btn-lg">@Localizer["Contact us"]</a>
+            </div>
+        </div>
+    </div>
+</div>

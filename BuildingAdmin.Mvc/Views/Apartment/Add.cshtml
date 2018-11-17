@@ -1,0 +1,112 @@
+@model ApartmentModel
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<string> Localizer
+    
+@{    
+    ViewData["Title"] = Localizer["Add apartment"];
+    Layout ="~/Views/Shared/Dashboard/_LayoutDashboard.cshtml";
+}
+<div class="row">
+    <div class="col-lg-12 col-lg-12">
+        <div class="card">
+            <div class="card-header" data-background-color="purple">
+                <h4 class="title">@Localizer["Add apartment"] @Localizer["Number"].ToString().ToLower() @Model.Number</h4>
+            </div>
+            <form method="POST" class="form" asp-controller="Apartment" asp-action="Add">
+            <div class="card-body">
+              <div class="row" style="padding-top: 10px">
+                <div class="col-lg-1 col-md-2">
+                  <label asp-for="FirstName" class="pull-right text-right margin-top-10"></label>
+                </div>
+                <div class="col-lg-5 col-md-9">
+                  <div class="form-group">
+                      <div class="input-group">
+                          <input type="text" asp-for="FirstName" class="form-control" required minlength="3" maxlength="100">
+                          <span class="form-control-feedback" style="top:0px;">
+                              <i class="material-icons">clear</i>
+                          </span>
+                      </div>
+                      <span asp-validation-for="FirstName" hidden="hidden" class="text-danger"></span>                                  
+                  </div>
+                </div>
+                  <div class="col-lg-1 col-md-2">
+                    <label asp-for="LastName" class="pull-right text-right margin-top-10"></label>
+                  </div>
+                  <div class="col-lg-4 col-md-9">
+                  <div class="form-group">
+                      <div class="input-group">
+                          <input type="text" asp-for="LastName" class="form-control"  required minlength="3" maxlength="100">
+                          <span class="form-control-feedback" style="top:0px;">
+                              <i class="material-icons">clear</i>
+                          </span>
+                      </div>
+                      <span asp-validation-for="LastName" hidden="hidden" class="text-danger"></span>                                  
+                  </div>
+                </div>
+              </div>
+               <div class="row">
+                    <div class="col-lg-1 col-md-2">
+                        <label asp-for="OwnerEmail" class="pull-right margin-top-10"></label>
+                    </div>
+                    <div class="col-lg-5 col-md-9">
+                        <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" asp-for="OwnerEmail" class="form-control">
+                        </div>
+                        <span asp-validation-for="OwnerEmail" hidden="hidden" class="text-danger"></span>                                  
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-md-2">
+                        <label asp-for="OwnerPhone" class="pull-right margin-top-10"></label>
+                    </div>
+                    <div class="col-lg-4 col-md-9">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" asp-for="OwnerPhone" class="form-control">
+                            </div>
+                            <span asp-validation-for="OwnerPhone" hidden="hidden" class="text-danger"></span>                                  
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-1 col-md-2">
+                  <label asp-for="Cut" class="pull-right margin-top-10"></label>
+                </div>
+                <div class="col-lg-1 col-md-3">
+                  <div class="form-group">
+                      <div class="input-group">
+                          <input type="text" asp-for="Cut" class="form-control text-center" required>                          
+                      </div>    
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-3">
+                  <label asp-for="NoOfPersons" class="pull-right text-right margin-top-10"></label>
+                </div>
+                <div class="col-lg-1 col-md-3">
+                  <div class="form-group">
+                      <div class="input-group">
+                          <input type="text" asp-for="NoOfPersons" class="form-control text-center" required>                          
+                      </div>    
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-3">
+                  <label asp-for="Entrance" class="pull-right text-right margin-top-10"></label>
+                </div>
+                <div class="col-lg-1 col-md-3">
+                  <div class="form-group">
+                      <div class="input-group">
+                          <input type="text" asp-for="Entrance" class="form-control text-center" required>                          
+                      </div>    
+                  </div>
+                </div>
+                <input type="hidden" asp-for="BuildingId" />
+                <input type="hidden" asp-for="Number" />
+              </div>
+            <div class="card-footer pull-right">
+                    <input type="submit" value="@Localizer["Save"]" class="btn btn-primary dashboard-btn" />
+            </div>
+            </form>
+        </div>
+    </div>
+</div>

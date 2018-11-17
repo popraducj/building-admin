@@ -1,0 +1,54 @@
+@model SettingsModel
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<string> Localizer
+
+@{
+    ViewData["Title"] = Localizer["Profile"];
+    Layout ="~/Views/Shared/_LayoutSettings.cshtml";
+}
+
+ <div class="main main-raised">
+    <div class="profile-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 ml-auto mr-auto">
+                    <div class="name">
+                        <h3 class="title text-center">@Localizer["Personal settings"]</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 ml-auto mr-auto  text-center">
+                    <strong class="text-success">@ViewBag.Success</strong>
+                    <strong class="text-danger">@ViewBag.Error</strong>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 ml-auto mr-auto">
+                    <div class="profile-tabs">
+                        <ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#personal" role="tab" data-toggle="tab">
+                                    <i class="material-icons">face</i> @Localizer["Edit"]
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#changePassword" role="tab" data-toggle="tab">
+                                    <i class="material-icons">lock_outline</i> @Localizer["Change Password"]
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content tab-space">
+                <div class="tab-pane active text-center gallery" id="personal">
+                    @await Html.PartialAsync("_Edit", Model)
+                </div>
+                <div class="tab-pane text-center gallery" id="changePassword">
+                    @await Html.PartialAsync("_ChangePassword", new SettingsChangePassword())
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

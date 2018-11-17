@@ -1,0 +1,73 @@
+@model List<BuildingAdmin.DataLayer.Models.Service>
+@using System.Linq;
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<string> Localizer
+    
+@{    
+    ViewData["Title"] = Localizer["Services"];
+    Layout ="~/Views/Shared/Dashboard/_LayoutDashboard.cshtml";
+
+    var model = new SelectFormModel(ViewBag.Buildings){
+        Id = ViewBag.SelectedBuilding,
+        ActionName= "List",
+        ControllerName = "Service",
+        Name = Localizer["Choose building"],
+        SubmitValue = Localizer["Show details"]
+    };
+}
+
+@await Html.PartialAsync("~/Views/Shared/Partials/_SelectForm.cshtml", model)
+@if(ViewBag.SelectedBuilding != null)
+{
+    var name = model.Options.Where(x => x.Id.Equals(ViewBag.SelectedBuilding)).First().Name;
+    <div class="row">
+        <div class="col-lg-12 col-md-12">
+            <div class="card">
+                <div class="card-header" data-background-color="purple">
+                    <a href="@Url.AbsoluteAction("Add", "Service", new {id = ViewBag.SelectedBuilding})" class="pull-right"><i class="material-icons">add_box</i></a>
+                    <h4 class="title">@Localizer["Services"]</h4>
+                    <p class="category">@name</p>
+                </div>
+                <div class="card-content table-responsive">
+                    <table class="table table-hover">
+                        <thead class="text-warning">
+                            <th>@Localizer["Provider name"]</th>
+                            <th>@Localizer["Unit"]</th>
+                            <th>@Localizer["With personal reading"]</th>
+                            <th>@Localizer["Display name for apartments"]</th>
+                            <th>@Localizer["Default value"]</th>
+                            <th></th>
+                             <th></th>
+                        </thead>
+                        <tbody>
+                            @{
+                                foreach (var item in Model)
+                                {
+                                    var defaultValue = @item.DefaultValue == 0 ? string.Empty : item.DefaultValue.ToString();
+                                    <tr>
+                                        <td>@item.Name</td>
+                                        <td>@item.Unit</td>
+                                        <td>
+                                            <div class="form-check" style="margin-top:0px;" >
+                                                <label >
+                                                    <input disabled class="form-check-input" type="checkbox" checked="@item.WithPersonalReading">   
+                                                    <span class="form-check-sign">
+                                                        <span class="check"></span>
+                                                    </span>
+                                                </label>        
+                                            </div>
+                                        </td>
+                                        <td>@item.DisplayNameForApartments</td>
+                                        <td>@defaultValue</td>
+                                        <td><a href="@Url.AbsoluteAction("Edit", "Service", new{ id= item.Id, buildingId = ViewBag.SelectedBuilding})" class="material-icons">edit</a></td>
+                                        <td><a href="@Url.AbsoluteAction("Remove", "Service", new{ id= item.Id, buildingId = ViewBag.SelectedBuilding})" class="material-icons text-danger">remove_circle_outline</a></td>
+                                    </tr>
+                                }
+                            }                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+}

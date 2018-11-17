@@ -1,0 +1,16 @@
+[
+    {
+        "Key": "Thank you",
+        "Values": {
+          "ro": "Va multumim",
+          "en": "Thank you"
+        }
+    },
+    {
+        "Key": "Thank you subtitle",
+        "Values": {
+          "ro": "Urmeaza sa procesam cererea dumneavostra si o sa revenim in cel mai scurt timp",
+          "en": "We will look into your request and come back to you as soon as we have an answer"
+        }
+    }
+]

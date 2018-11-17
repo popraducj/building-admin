@@ -1,0 +1,67 @@
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<string> Localizer
+
+<div class="sidebar" data-color="blue" data-image="http://localhost:5000/img/sidebar-1.jpg">
+<!--
+Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
+
+Tip 2: you can also add an image using data-image tag
+-->
+    <div class="logo">
+        <a href="http://localhost:5000" class="simple-text">
+            Building Admin
+        </a>
+    </div>
+    <div class="sidebar-wrapper">
+        <ul class="nav">
+            <li id="dashboard" name="dashboard" class="@Html.ActiveMenuItem("Index", "Landing")">
+                <a href="@Url.AbsoluteAction("Index", "Landing")">
+                    <i class="material-icons">dashboard</i>
+                    <p>@Localizer["Dashboard"]</p>
+                </a>
+            </li>
+            <li id="properties" name="properties" class="@Html.ActiveMenuItem("List", "Building")">
+                <a href="@Url.AbsoluteAction("List", "Building")">
+                    <i class="material-icons">bubble_chart</i>
+                    <p>@Localizer["Buildings"]</p>
+                </a>
+            </li>
+            <li id="apartments" name="apartments" class="@Html.ActiveMenuItem("List", "Apartment")">
+                <a href="@Url.AbsoluteAction("List", "Apartment")">
+                    <i class="material-icons">home</i>
+                    <p>@Localizer["Apartments"]</p>
+                </a>
+            </li>
+            <li id="services" name="services" class="@Html.ActiveMenuItem("List", "Service")">
+                <a href="@Url.AbsoluteAction("List", "Service")">
+                    <i class="material-icons">build</i>
+                    <p>@Localizer["Services"]</p>
+                </a>
+            </li>
+            <li id="bills" name="bills" class="@Html.ActiveMenuItem("List", "Bill")">
+                <a href="@Url.AbsoluteAction("List", "Bill")">
+                    <i class="material-icons">attach_money</i>
+                    <p>@Localizer["Bills"]</p>
+                </a>
+            </li>
+            <li id="notifications" name="notifications" class="@Html.ActiveMenuItem("Index", "Notification")">
+                <a href="@Url.AbsoluteAction("Index", "Notification")">
+                    <i class="material-icons text-gray">notifications</i>
+                    <p>@Localizer["Notifications"]</p>
+                </a>
+            </li>
+            <li id="settings" name="settings" class="@Html.ActiveMenuItem("Index", "Settings")">
+                <a href="@Url.AbsoluteAction("Index", "Settings")">
+                    <i class="material-icons">settings</i>
+                    <p>@Localizer["Settings"]</p>
+                </a>
+            </li>
+            <li id="profile" name="profile" class="@Html.ActiveMenuItem("Index", "Profile")">
+                <a href="@Url.AbsoluteAction("Index", "Profile")">
+                    <i class="material-icons">person</i>
+                    <p>@Localizer["Profile"]</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

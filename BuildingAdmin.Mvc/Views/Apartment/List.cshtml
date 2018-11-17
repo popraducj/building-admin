@@ -1,0 +1,68 @@
+@model List<BuildingAdmin.DataLayer.Models.Apartment>
+@using System.Linq;
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<string> Localizer
+    
+@{    
+    ViewData["Title"] = Localizer["Apartments"];
+    Layout ="~/Views/Shared/Dashboard/_LayoutDashboard.cshtml";
+
+    var model = new SelectFormModel(ViewBag.Buildings){
+        Id = ViewBag.SelectedBuilding,
+        ActionName= "List",
+        ControllerName = "Apartment",
+        Name = Localizer["Choose building"],
+        SubmitValue = Localizer["Show details"]
+    };
+}
+
+@await Html.PartialAsync("~/Views/Shared/Partials/_SelectForm.cshtml", model)
+@if(ViewBag.SelectedBuilding != new Guid().ToString())
+{
+    var name = model.Options.Where(x => x.Id.Equals(ViewBag.SelectedBuilding)).First().Name;
+    <div class="row">
+        <div class="col-lg-12 col-md-12">
+            <div class="card">
+                <div class="card-header" data-background-color="purple">
+                    <a href="@Url.AbsoluteAction("Add", "Apartment", new {buildingId = ViewBag.SelectedBuilding})" class="pull-right"><i class="material-icons">add_box</i></a>
+                    <h4 class="title">@Localizer["Apartments"]</h4>
+                    <p class="category">@name</p>
+                </div>
+                <div class="card-content table-responsive">
+                    <table class="table table-hover">
+                        <thead class="text-warning">
+                            <th>@Localizer["Number"]</th>
+                            <th>@Localizer["First Name"]</th>
+                            <th>@Localizer["Last Name"]</th>
+                            <th>@Localizer["Entrance"]</th>
+                            <th>@Localizer["Number of persons"]</th>
+                            <th>@Localizer["Cut"]</th>
+                            <th>@Localizer["Email"]</th>
+                            <th>@Localizer["Phone"]</th>
+                            <th></th>
+                            <th></th>
+                        </thead>
+                        <tbody>
+                            @{
+                                foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.Number</td>
+                                        <td>@item.FirstName.Last().Value</td>
+                                        <td>@item.LastName.Last().Value</td>
+                                        <td>@item.Entrance</td>
+                                        <td>@item.NoOfPersons.Last().Value</td>
+                                        <td>@item.Cut</td>
+                                        <td>@item.OwnerEmail</td>
+                                        <td>@item.OwnerPhone</td>
+                                        <td><a href="@Url.AbsoluteAction("Edit", "Apartment", new{ id= item.Id})" class="material-icons">edit</a></td>
+                                    </tr>
+                                }
+                            }                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+}

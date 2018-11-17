@@ -1,0 +1,18 @@
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<string> Localizer
+
+@using System.Security.Claims;
+@{
+    ViewData["Title"] = Localizer["Thank you"];
+}
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="title">@Localizer["Thank you"]!</h1>
+                <h4>@Localizer["Thank you subtitle"]</h4>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,52 @@
+@model List<BuildingAdmin.DataLayer.Models.Building>
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<string> Localizer
+    
+@{    
+    ViewData["Title"] = Localizer["Buildings"];
+    Layout ="~/Views/Shared/Dashboard/_LayoutDashboard.cshtml";
+}
+<div class="row">
+    <div class="col-lg-12 col-md-12">
+        <div class="card">
+            <div class="card-header" data-background-color="purple">
+                <a href="@Url.AbsoluteAction("Add", "Building")" class="pull-right"><i class="material-icons">add_box</i></a>
+                <h4 class="title">@Localizer["Buildings"]</h4>
+                <p class="category">@Localizer["Buildings overview"]</p>
+            </div>
+            <div class="card-content table-responsive">
+                <table class="table table-hover">
+                    <thead class="text-warning">
+                        <th>@Localizer["Item no"]</th>
+                        <th>@Localizer["Name"]</th>
+                        <th>@Localizer["Address"]</th>
+                        <th>@Localizer["CUI"]</th>
+                        <th>@Localizer["Penalities"]</th>
+                        <th>@Localizer["IBAN"]</th>
+                        <th></th>
+                        <th></th>
+                    </thead>
+                    <tbody>
+                        @{
+                            var index = 0;
+                            foreach (var item in Model)
+                            {
+                                index++;
+                                <tr>
+                                    <td>@index</td>
+                                    <td>@item.Name</td>
+                                    <td>@item.Address</td>
+                                    <td>@item.CUI</td>
+                                    <td>@item.Penalities</td>
+                                    <td>@item.IBAN</td>
+                                    <td><a href="@Url.AbsoluteAction("Edit", "Building", new{ id= item.Id})" class="material-icons">edit</a></td>
+                                    <td><a href="@Url.AbsoluteAction("Remove", "Building", new{ id= item.Id})" class="material-icons text-danger">remove_circle_outline</a></td>
+                                </tr>
+                            }
+                        }                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
